@@ -1,0 +1,7 @@
+# 1 "options"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "options"
+EXE_INC = -g -I$(LIB_SRC)/transportModels -I$(LIB_SRC)/transportModels/incompressible/lnInclude -I$(LIB_SRC)/transportModels/interfaceProperties/lnInclude -I$(LIB_SRC)/turbulenceModels/RAS -I$(LIB_SRC)/finiteVolume/lnInclude -I$(LIB_SRC)/dynamicMesh/lnInclude -I$(LIB_SRC)/dynamicFvMesh/lnInclude -I$(LIB_SRC)/topoChangerFvMesh/lnInclude -I$(LIB_SRC)/meshTools/lnInclude $(WM_DECOMP_INC) -I$(LIB_SRC)/tetDecompositionFiniteElement/lnInclude -I$(LIB_SRC)/tetDecompositionMotionSolver/lnInclude -I$(LIB_SRC)/ODE/lnInclude
+# 17 "options"
+LIB_LIBS = -linterfaceProperties -lincompressibleTransportModels -lincompressibleRASModels -lfiniteVolume -ldynamicMesh -ldynamicFvMesh -ltopoChangerFvMesh -lmeshTools $(WM_DECOMP_LIBS) -lODE -llduSolvers

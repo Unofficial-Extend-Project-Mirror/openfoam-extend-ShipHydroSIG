@@ -1,0 +1,3 @@
+faceSet bargeSliderZone new patchToFace bargeSlider
+faceSet boxSliderZone new patchToFace boxSlider
+quit

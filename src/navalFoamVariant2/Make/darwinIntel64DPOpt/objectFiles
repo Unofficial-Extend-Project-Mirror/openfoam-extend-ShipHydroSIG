@@ -1,0 +1,2 @@
+OBJECTS = \
+$(OBJECTS_DIR)/navalFoamVariant2.o

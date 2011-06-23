@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/openfoam-extend/!svn/ver/1177/trunk/Core/OpenFOAM-1.5-dev/src/finiteVolume/fields/fvPatchFields/derived/parabolicVelocity
+END
+parabolicVelocityFvPatchVectorField.C
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/openfoam-extend/!svn/ver/1177/trunk/Core/OpenFOAM-1.5-dev/src/finiteVolume/fields/fvPatchFields/derived/parabolicVelocity/parabolicVelocityFvPatchVectorField.C
+END
+parabolicVelocityFvPatchVectorField.H
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svnroot/openfoam-extend/!svn/ver/912/trunk/Core/OpenFOAM-1.5-dev/src/finiteVolume/fields/fvPatchFields/derived/parabolicVelocity/parabolicVelocityFvPatchVectorField.H
+END

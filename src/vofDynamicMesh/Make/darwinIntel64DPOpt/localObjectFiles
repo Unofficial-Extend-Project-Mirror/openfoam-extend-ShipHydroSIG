@@ -1,0 +1,19 @@
+LOCAL_OBJECTS = \
+TaitBryanCoordinateRotation.o\
+harmonicSolidMotion.o\
+graphSolidMotion.o\
+excentreRotationFvMesh.o\
+threeDofMotion.o\
+threeDofMotionSubset.o\
+floatingBody.o\
+sixDofMotion.o\
+sixDofTopoMotion.o\
+floatingBodyFvMesh.o\
+rasVofForceAndTorqueFunctionObject.o\
+CICSAM.o\
+CICSAMDC.o\
+numericalBeach.o\
+movingWallSlipFvPatchVectorField.o\
+linearWaveFvPatchFields.o\
+linearWaveVelocityFvPatchField.o\
+numericalBeachFvPatchField.o

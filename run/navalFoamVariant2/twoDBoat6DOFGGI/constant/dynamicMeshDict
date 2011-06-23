@@ -1,0 +1,69 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.4                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+    class           dictionary;
+    object          dynamicMeshDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// dynamicFvMesh   staticFvMesh;
+
+dynamicFvMesh   floatingBodyFvMesh;
+
+floatingBodyFvMeshCoeffs
+{
+    bodies
+    (
+        twoDBoat
+        {
+            hullPatches     (bow stern hull);
+
+            addPropulsionForce      yes;
+            propulsionDirection     (-1 0 0);
+            propulsionForceCentroid (0 -0.003 0);
+
+            odeSolver       RK;
+            epsilon         0.001;
+
+            // Centre of slider is given relative to centre of gravity
+            // of the body
+            centreOfSlider  (-0.05 0.05 0);
+            hullSlider      bargeSlider;
+            fixedSlider     boxSlider;
+
+            hullSliderZone      bargeSliderZone;
+            fixedSliderZone     boxSliderZone;;
+
+            fixedSurge      no;
+            fixedSway       no;
+            fixedHeave      no;
+
+            fixedRoll       no;
+            fixedPitch      no;
+            fixedYaw        no;
+
+            steadyState     no;
+        }
+    );
+}
+
+solver          laplaceFaceDecomposition;
+diffusivity     uniform;
+
+twoDMotion      yes;
+frozenDiffusion on;
+
+distancePatches (bow stern hull);
+
+
+// ************************************************************************* //

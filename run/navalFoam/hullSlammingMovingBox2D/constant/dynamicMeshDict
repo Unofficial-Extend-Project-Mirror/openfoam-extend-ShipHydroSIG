@@ -1,0 +1,50 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.4                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+    class           dictionary;
+    object          motionProperties;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dynamicFvMesh   movingBoxFvMesh;
+// dynamicFvMesh   staticFvMesh;
+
+movingBoxFvMeshCoeffs
+{
+    splitDirection     (0 1 0);
+
+    leftEdge     (0 -0.4 -0.01);
+    rightEdge    (0.75 1 0.01);
+
+    velocity     (0 -7 0);
+}
+
+// dynamicFvMesh    graphSolidMotion;
+
+// graphSolidMotionCoeffs
+// {
+//     motionCentre   (0 0 0);
+
+//     x              zero.dat;
+//     y              dropVelocity.dat;
+//     z              zero.dat;
+
+//     xRot           zero.dat;
+//     yRot           zero.dat;
+//     zRot           zero.dat;
+
+//     inDegrees            true;
+// }
+
+
+// ************************************************************************* //

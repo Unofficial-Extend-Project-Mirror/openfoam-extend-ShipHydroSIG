@@ -1,0 +1,144 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.4                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+    class           dictionary;
+    object          fvSolution;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    pd
+    {
+        solver            amgSolver;
+        cycle             V-cycle;
+        policy            AAMG;
+        nPreSweeps        2;
+        nPostSweeps       2;
+        groupSize         4;
+        minCoarseEqns     20;
+        nMaxLevels        100;
+        scale             on;
+        smoother          ILU;
+
+        minIter           0;
+        maxIter           100;
+        tolerance         1e-8;
+        relTol            0.01;
+    };
+
+    pdFinal
+    {
+        solver            amgSolver;
+        cycle             V-cycle;
+        policy            AAMG;
+        nPreSweeps        2;
+        nPostSweeps       2;
+        groupSize         4;
+        minCoarseEqns     20;
+        nMaxLevels        100;
+        scale             on;
+        smoother          ILU;
+
+        minIter           0;
+        maxIter           100;
+        tolerance         1e-8;
+        relTol            0.0;
+    };
+
+    alpha1
+    {
+        solver            BiCGStab;
+        preconditioner      Cholesky;
+
+        minIter           0;
+        maxIter           500;
+        tolerance         1e-8;
+        relTol            0.0;
+    };
+
+    U
+    {
+        solver            BiCGStab;
+        preconditioner    Cholesky;
+
+        minIter           0;
+        maxIter           500;
+        tolerance         1e-10;
+        relTol            0.0;
+    };
+
+    k BiCGStab
+    {
+        solver            BiCGStab;
+        preconditioner    Cholesky;
+
+        minIter           1;
+        maxIter           500;
+        tolerance         1e-10;
+        relTol            0.0;
+    };
+
+    epsilon BiCGStab
+    {
+        solver            BiCGStab;
+        preconditioner      Cholesky;
+
+        minIter           1;
+        maxIter           500;
+        tolerance         1e-10;
+        relTol            0.0;
+    };
+
+    omega BiCGStab
+    {
+        solver            BiCGStab;
+        preconditioner    Cholesky;
+
+        minIter           1;
+        maxIter           500;
+        tolerance         1e-10;
+        relTol            0.0;
+    };
+
+}
+
+PISO
+{
+    cAlpha           1;
+}
+
+PIMPLE
+{
+    pRefCell         2000;
+    pRefValue        0.0;
+
+    nCorrectors        4;
+    nOuterCorrectors   1;
+    nNonOrthogonalCorrectors 0;
+
+    nAlphaSubCycles 1;
+
+    singlePhase     yes;
+    implicitAlpha   off;
+    implicitP       off;
+
+    correctPhi      off;
+    checkMeshCourantNo  off;
+
+    limitMagU       10;
+    startMotionTime 0;
+}
+
+
+// ************************************************************************* //

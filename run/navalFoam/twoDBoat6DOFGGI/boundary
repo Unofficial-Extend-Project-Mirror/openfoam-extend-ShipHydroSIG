@@ -1,0 +1,88 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.5-dev                               |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+10
+(
+    bow
+    {
+        type            wall;
+        nFaces          25;
+        startFace       6310;
+    }
+    stern
+    {
+        type            wall;
+        nFaces          25;
+        startFace       6335;
+    }
+    hull
+    {
+        type            wall;
+        nFaces          60;
+        startFace       6360;
+    }
+    bargeSlider
+    {
+        type            ggi;
+        nFaces          110;
+        startFace       6420;
+        zone            bargeSliderZone;
+        shadowPatch     boxSlider;
+        bridgeOverlap   false;
+    }
+    boxSlider
+    {
+        type            ggi;
+        nFaces          80;
+        startFace       6530;
+        zone            boxSliderZone;
+        shadowPatch     bargeSlider;
+        bridgeOverlap   false;
+    }
+    left
+    {
+        type            patch;
+        nFaces          20;
+        startFace       6610;
+    }
+    right
+    {
+        type            patch;
+        nFaces          20;
+        startFace       6630;
+    }
+    bottom
+    {
+        type            patch;
+        nFaces          20;
+        startFace       6650;
+    }
+    top
+    {
+        type            patch;
+        nFaces          20;
+        startFace       6670;
+    }
+    frontAndBack
+    {
+        type            empty;
+        nFaces          6500;
+        startFace       6690;
+    }
+)
+
+// ************************************************************************* //

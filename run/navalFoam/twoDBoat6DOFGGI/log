@@ -1,0 +1,1933 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM Extend Project: Open source CFD        |
+|  \\    /   O peration     | Version:  1.6-ext                               |
+|   \\  /    A nd           | Web:      www.extend-project.de                 |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 1.6-ext-b004b7565a8e
+Exec   : navalFoam
+Date   : Nov 12 2010
+Time   : 14:52:59
+Host   : bingo
+PID    : 5773
+Case   : /home/hjasak/OpenFOAM/hjasak-1.6-ext/work/NavalHydro/run/navalFoam/twoDBoat6DOFGGI
+nProcs : 1
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create dynamic mesh for time = 0
+
+Selecting dynamicFvMesh floatingBodyFvMesh
+Selecting motion solver: laplaceFaceDecomposition
+Selecting motion diffusivity: uniform
+
+Reading g
+Reading field pd
+
+Reading field alpha1
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Initializing the GGI interpolator between master/shadow patches: bargeSlider/boxSlider
+Reading transportProperties
+
+Selecting incompressible transport model Newtonian
+Selecting incompressible transport model Newtonian
+Calculating field g.h
+
+Selecting turbulence model type RASModel
+Selecting RAS turbulence model laminar
+Reading field rAU if present
+
+time step continuity errors : sum local = 4.32618e-06, global = 9.16105e-23, cumulative = 9.16105e-23
+CG:  Solving for pcorr, Initial residual = 1, Final residual = 9.57667e-08, No Iterations 55
+time step continuity errors : sum local = 4.14304e-13, global = 7.51768e-14, cumulative = 7.51768e-14
+
+Starting time loop
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00130603 max: 0.0491134 velocity magnitude: 0.433502
+deltaT = 0.000238095
+Time = 0.000238095
+
+BiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 3.41388e-09, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 1, Final residual = 3.90448e-11, No Iterations 3
+CG:  Solving for pd, Initial residual = 1, Final residual = 9.50751e-08, No Iterations 14
+CG:  Solving for pd, Initial residual = 0.199947, Final residual = 4.15959e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.202624, Final residual = 4.50745e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.103672, Final residual = 8.38906e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0463827, Final residual = 3.9967e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0262392, Final residual = 8.70152e-08, No Iterations 11
+mag(U): max: 1.0081 avg: 0.199844
+time step continuity errors : sum local = 1.54777e-11, global = -3.6004e-13, cumulative = -2.84863e-13
+BiCGStab:  Solving for alpha1, Initial residual = 1.9863e-06, Final residual = 5.80189e-12, No Iterations 1
+Liquid phase volume fraction = 0.500445  Min(alpha1) = -0.00010067  Max(alpha1) = 1.00001
+BiCGStab:  Solving for Ux, Initial residual = 0.00312994, Final residual = 3.26313e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.0211826, Final residual = 7.08846e-13, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0194159, Final residual = 8.74843e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0106653, Final residual = 3.438e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00600484, Final residual = 6.63721e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00362709, Final residual = 3.61056e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.0027542, Final residual = 2.95387e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00221583, Final residual = 8.71277e-08, No Iterations 8
+mag(U): max: 0.949896 avg: 0.199334
+time step continuity errors : sum local = 2.87196e-11, global = -6.43782e-13, cumulative = -9.28646e-13
+Calculating static pressure
+CG:  Solving for p, Initial residual = 1, Final residual = 7.93311e-08, No Iterations 20
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 7.19215e-07, Final residual = 4.98806e-13, No Iterations 1
+Liquid phase volume fraction = 0.500445  Min(alpha1) = -9.28937e-05  Max(alpha1) = 1
+ExecutionTime = 0.4 s  ClockTime = 0 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00158194 max: 0.0817758 velocity magnitude: 0.6431
+deltaT = 0.000282313
+Time = 0.000520408
+
+BiCGStab:  Solving for Ux, Initial residual = 0.0143145, Final residual = 4.26697e-13, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.0817995, Final residual = 9.04541e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0360159, Final residual = 4.66864e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0222373, Final residual = 8.31941e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.017449, Final residual = 5.40324e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0148454, Final residual = 4.11494e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0130657, Final residual = 3.30833e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0115953, Final residual = 9.14e-08, No Iterations 10
+mag(U): max: 1.35993 avg: 0.199946
+time step continuity errors : sum local = 2.7394e-11, global = 7.95572e-13, cumulative = -1.33073e-13
+BiCGStab:  Solving for alpha1, Initial residual = 2.28818e-06, Final residual = 8.06616e-12, No Iterations 1
+Liquid phase volume fraction = 0.500445  Min(alpha1) = -0.000192322  Max(alpha1) = 1
+BiCGStab:  Solving for Ux, Initial residual = 0.00311801, Final residual = 5.85294e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.0153169, Final residual = 8.96318e-12, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0152055, Final residual = 2.97326e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0163913, Final residual = 9.87205e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00978235, Final residual = 8.19863e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00648619, Final residual = 3.41099e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00465658, Final residual = 8.79984e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00345713, Final residual = 8.56548e-08, No Iterations 8
+mag(U): max: 1.16595 avg: 0.199419
+time step continuity errors : sum local = 1.19846e-11, global = -8.56394e-14, cumulative = -2.18713e-13
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00955883, Final residual = 4.91644e-08, No Iterations 12
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 6.26014e-07, Final residual = 9.30429e-13, No Iterations 1
+Liquid phase volume fraction = 0.500445  Min(alpha1) = -0.000185441  Max(alpha1) = 1
+ExecutionTime = 0.65 s  ClockTime = 0 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00187213 max: 0.103162 velocity magnitude: 0.700158
+deltaT = 0.000335855
+Time = 0.000856263
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00317945, Final residual = 9.85184e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.0190151, Final residual = 4.31025e-12, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0255358, Final residual = 7.63387e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0190481, Final residual = 5.00117e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0147305, Final residual = 9.99704e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.0115411, Final residual = 7.04647e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00901492, Final residual = 5.27538e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00720057, Final residual = 4.33237e-08, No Iterations 10
+mag(U): max: 1.38312 avg: 0.199988
+time step continuity errors : sum local = 5.53888e-12, global = -2.89418e-13, cumulative = -5.0813e-13
+BiCGStab:  Solving for alpha1, Initial residual = 2.69919e-06, Final residual = 1.05251e-11, No Iterations 1
+Liquid phase volume fraction = 0.500444  Min(alpha1) = -0.000277425  Max(alpha1) = 1
+BiCGStab:  Solving for Ux, Initial residual = 0.00179529, Final residual = 7.47254e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00933128, Final residual = 6.33625e-12, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0224683, Final residual = 5.73261e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0221933, Final residual = 6.70758e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.0095928, Final residual = 6.79826e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00616061, Final residual = 5.43396e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.0043071, Final residual = 4.35462e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00338904, Final residual = 7.06307e-08, No Iterations 8
+mag(U): max: 1.29471 avg: 0.199427
+time step continuity errors : sum local = 7.65171e-12, global = -6.95918e-13, cumulative = -1.20405e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00371481, Final residual = 4.76037e-08, No Iterations 11
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 6.05547e-07, Final residual = 1.85904e-12, No Iterations 1
+Liquid phase volume fraction = 0.500444  Min(alpha1) = -0.000269291  Max(alpha1) = 1
+ExecutionTime = 0.9 s  ClockTime = 1 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00222513 max: 0.128311 velocity magnitude: 0.732154
+deltaT = 0.000398828
+Time = 0.00125509
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00251255, Final residual = 3.61376e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.0124545, Final residual = 6.33304e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0258412, Final residual = 7.41685e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0192446, Final residual = 5.0147e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0150246, Final residual = 9.05407e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0114497, Final residual = 6.67196e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00859586, Final residual = 9.87818e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00677413, Final residual = 7.64443e-08, No Iterations 10
+mag(U): max: 1.46767 avg: 0.200007
+time step continuity errors : sum local = 1.01464e-11, global = 4.42869e-14, cumulative = -1.15976e-12
+BiCGStab:  Solving for alpha1, Initial residual = 3.21245e-06, Final residual = 1.53101e-11, No Iterations 1
+Liquid phase volume fraction = 0.500444  Min(alpha1) = -0.000346184  Max(alpha1) = 1
+BiCGStab:  Solving for Ux, Initial residual = 0.00164854, Final residual = 8.15543e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00791453, Final residual = 7.36618e-12, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0246512, Final residual = 7.08875e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0224592, Final residual = 9.33026e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00885825, Final residual = 6.91504e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00581435, Final residual = 6.39022e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00375974, Final residual = 5.55543e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00317208, Final residual = 8.73189e-08, No Iterations 8
+mag(U): max: 1.39566 avg: 0.199425
+time step continuity errors : sum local = 1.07204e-11, global = -5.85224e-13, cumulative = -1.74499e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00216091, Final residual = 9.98399e-08, No Iterations 10
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 6.4518e-07, Final residual = 3.65144e-12, No Iterations 1
+Liquid phase volume fraction = 0.500444  Min(alpha1) = -0.000336329  Max(alpha1) = 1
+ExecutionTime = 1.14 s  ClockTime = 1 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00264187 max: 0.157377 velocity magnitude: 0.760637
+deltaT = 0.000468623
+Time = 0.00172371
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00213498, Final residual = 3.16005e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00907827, Final residual = 6.22492e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.024909, Final residual = 8.91906e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0192812, Final residual = 6.29507e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0150742, Final residual = 9.23541e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0112606, Final residual = 7.05951e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00871448, Final residual = 5.22337e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00694614, Final residual = 8.45251e-08, No Iterations 10
+mag(U): max: 1.54311 avg: 0.200017
+time step continuity errors : sum local = 1.31199e-11, global = 9.48502e-14, cumulative = -1.65014e-12
+BiCGStab:  Solving for alpha1, Initial residual = 3.7953e-06, Final residual = 2.84942e-11, No Iterations 1
+Liquid phase volume fraction = 0.500443  Min(alpha1) = -0.00039054  Max(alpha1) = 1
+BiCGStab:  Solving for Ux, Initial residual = 0.0015343, Final residual = 9.59237e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00688938, Final residual = 1.4632e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0248292, Final residual = 8.29392e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0213721, Final residual = 9.28485e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00814328, Final residual = 6.36896e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00522992, Final residual = 7.30123e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00353736, Final residual = 6.1711e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00291169, Final residual = 4.52177e-08, No Iterations 9
+mag(U): max: 1.48018 avg: 0.199411
+time step continuity errors : sum local = 6.8506e-12, global = -2.42328e-13, cumulative = -1.89246e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00145441, Final residual = 6.88154e-08, No Iterations 10
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 6.96177e-07, Final residual = 6.3491e-12, No Iterations 1
+Liquid phase volume fraction = 0.500443  Min(alpha1) = -0.000379022  Max(alpha1) = 1
+ExecutionTime = 1.39 s  ClockTime = 1 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00310445 max: 0.189979 velocity magnitude: 0.786281
+deltaT = 0.000553827
+Time = 0.00227754
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00194707, Final residual = 3.87897e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00730465, Final residual = 7.42514e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0241426, Final residual = 4.59101e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0189561, Final residual = 7.34866e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.014884, Final residual = 6.33811e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0111971, Final residual = 9.14794e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00872854, Final residual = 6.77704e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00694987, Final residual = 5.2056e-08, No Iterations 11
+mag(U): max: 1.61225 avg: 0.200002
+time step continuity errors : sum local = 9.80254e-12, global = 7.02476e-13, cumulative = -1.18999e-12
+BiCGStab:  Solving for alpha1, Initial residual = 4.5442e-06, Final residual = 6.08163e-11, No Iterations 1
+Liquid phase volume fraction = 0.500442  Min(alpha1) = -0.000405431  Max(alpha1) = 1
+BiCGStab:  Solving for Ux, Initial residual = 0.00144808, Final residual = 3.16924e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.0060661, Final residual = 3.69772e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0245367, Final residual = 5.21626e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0204536, Final residual = 9.08167e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00780314, Final residual = 6.28268e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00500318, Final residual = 7.25837e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00328882, Final residual = 7.09716e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00263685, Final residual = 4.98397e-08, No Iterations 9
+mag(U): max: 1.55732 avg: 0.199379
+time step continuity errors : sum local = 9.46521e-12, global = -4.37339e-13, cumulative = -1.62733e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00105507, Final residual = 5.09256e-08, No Iterations 10
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 7.58843e-07, Final residual = 1.27857e-11, No Iterations 1
+Liquid phase volume fraction = 0.500442  Min(alpha1) = -0.000392756  Max(alpha1) = 1
+ExecutionTime = 1.65 s  ClockTime = 2 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00366956 max: 0.230769 velocity magnitude: 0.812291
+deltaT = 0.000632945
+Time = 0.00291049
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00172582, Final residual = 4.68345e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00585623, Final residual = 3.93477e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0242581, Final residual = 5.68673e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0188254, Final residual = 7.69239e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0146111, Final residual = 5.00047e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0109712, Final residual = 8.56556e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00854563, Final residual = 6.99562e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00651948, Final residual = 9.2611e-08, No Iterations 10
+mag(U): max: 1.67694 avg: 0.19999
+time step continuity errors : sum local = 2.07052e-11, global = 1.23729e-12, cumulative = -3.90037e-13
+BiCGStab:  Solving for alpha1, Initial residual = 5.23766e-06, Final residual = 1.10568e-10, No Iterations 1
+Liquid phase volume fraction = 0.500441  Min(alpha1) = -0.000389639  Max(alpha1) = 1
+BiCGStab:  Solving for Ux, Initial residual = 0.00136463, Final residual = 5.86818e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00543922, Final residual = 1.18265e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0243915, Final residual = 7.2431e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0184574, Final residual = 9.30869e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.0070749, Final residual = 5.05285e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00433196, Final residual = 6.98237e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00289642, Final residual = 7.66513e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00232482, Final residual = 8.98543e-08, No Iterations 8
+mag(U): max: 1.63017 avg: 0.199349
+time step continuity errors : sum local = 2.08006e-11, global = 4.04096e-13, cumulative = 1.40588e-14
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000835082, Final residual = 3.84547e-08, No Iterations 10
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 8.1133e-07, Final residual = 2.30045e-11, No Iterations 1
+Liquid phase volume fraction = 0.500441  Min(alpha1) = -0.000377547  Max(alpha1) = 1
+ExecutionTime = 1.9 s  ClockTime = 2 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00419429 max: 0.271662 velocity magnitude: 0.838697
+deltaT = 0.000712063
+Time = 0.00362255
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00157487, Final residual = 5.68599e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00493667, Final residual = 3.43321e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0237354, Final residual = 8.52362e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0183063, Final residual = 6.04884e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0138892, Final residual = 9.3303e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0106199, Final residual = 6.94367e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00801071, Final residual = 9.85731e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00615938, Final residual = 7.57126e-08, No Iterations 10
+mag(U): max: 1.74035 avg: 0.199974
+time step continuity errors : sum local = 1.9919e-11, global = 1.85808e-12, cumulative = 1.87214e-12
+BiCGStab:  Solving for alpha1, Initial residual = 5.95695e-06, Final residual = 1.88421e-10, No Iterations 1
+Liquid phase volume fraction = 0.50044  Min(alpha1) = -0.000385655  Max(alpha1) = 1
+BiCGStab:  Solving for Ux, Initial residual = 0.00129589, Final residual = 1.13939e-10, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00494241, Final residual = 3.84679e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0245936, Final residual = 8.47067e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0174345, Final residual = 5.28933e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00663945, Final residual = 5.98744e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00388563, Final residual = 7.43593e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.0027775, Final residual = 7.8737e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00213791, Final residual = 6.8173e-08, No Iterations 9
+mag(U): max: 1.70152 avg: 0.199305
+time step continuity errors : sum local = 1.87392e-11, global = 1.30321e-12, cumulative = 3.17534e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000702631, Final residual = 3.09371e-08, No Iterations 10
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 8.79543e-07, Final residual = 4.25832e-11, No Iterations 1
+Liquid phase volume fraction = 0.50044  Min(alpha1) = -0.00039793  Max(alpha1) = 1
+ExecutionTime = 2.16 s  ClockTime = 2 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.004719 max: 0.315773 velocity magnitude: 0.866414
+deltaT = 0.000779879
+Time = 0.00440243
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00144509, Final residual = 7.25371e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00425152, Final residual = 4.15375e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0239293, Final residual = 6.71319e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0183036, Final residual = 5.15628e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0137676, Final residual = 7.85115e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0104214, Final residual = 5.77272e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0078954, Final residual = 9.50674e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00608337, Final residual = 7.48989e-08, No Iterations 10
+mag(U): max: 1.80884 avg: 0.199961
+time step continuity errors : sum local = 2.23708e-11, global = 1.2128e-12, cumulative = 4.38815e-12
+BiCGStab:  Solving for alpha1, Initial residual = 6.58795e-06, Final residual = 2.90875e-10, No Iterations 1
+Liquid phase volume fraction = 0.500439  Min(alpha1) = -0.000437449  Max(alpha1) = 1
+BiCGStab:  Solving for Ux, Initial residual = 0.00123027, Final residual = 5.67914e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00455125, Final residual = 1.04623e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0248169, Final residual = 7.58731e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0173662, Final residual = 5.136e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00632427, Final residual = 7.52891e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00341881, Final residual = 6.72826e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.0022826, Final residual = 8.02796e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00167082, Final residual = 6.88558e-08, No Iterations 9
+mag(U): max: 1.76997 avg: 0.199253
+time step continuity errors : sum local = 2.15371e-11, global = -1.95903e-12, cumulative = 2.42911e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000613755, Final residual = 9.37543e-08, No Iterations 9
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 9.38405e-07, Final residual = 7.93364e-11, No Iterations 1
+Liquid phase volume fraction = 0.500439  Min(alpha1) = -0.000449155  Max(alpha1) = 1
+ExecutionTime = 2.43 s  ClockTime = 3 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00516867 max: 0.357575 velocity magnitude: 0.895
+deltaT = 0.000866532
+Time = 0.00526896
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00137672, Final residual = 1.45525e-11, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00383757, Final residual = 6.61271e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0232102, Final residual = 8.41924e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0175538, Final residual = 6.53282e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0131802, Final residual = 9.72945e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00978923, Final residual = 7.34978e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.007421, Final residual = 5.66767e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00575846, Final residual = 8.60472e-08, No Iterations 10
+mag(U): max: 1.87608 avg: 0.199881
+time step continuity errors : sum local = 2.94599e-11, global = 5.28661e-13, cumulative = 2.95778e-12
+BiCGStab:  Solving for alpha1, Initial residual = 7.42251e-06, Final residual = 4.73746e-10, No Iterations 1
+Liquid phase volume fraction = 0.500438  Min(alpha1) = -0.000491795  Max(alpha1) = 1.00001
+BiCGStab:  Solving for Ux, Initial residual = 0.00118191, Final residual = 4.08581e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.0041646, Final residual = 9.02319e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.024086, Final residual = 7.38335e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0157559, Final residual = 5.74932e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00550321, Final residual = 6.46352e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00292543, Final residual = 7.11664e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00187152, Final residual = 6.19085e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00142554, Final residual = 8.49507e-08, No Iterations 8
+mag(U): max: 1.83575 avg: 0.199226
+time step continuity errors : sum local = 3.12661e-11, global = -1.45026e-12, cumulative = 1.50751e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000544632, Final residual = 7.41142e-08, No Iterations 9
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 9.59861e-07, Final residual = 1.17497e-10, No Iterations 1
+Liquid phase volume fraction = 0.500438  Min(alpha1) = -0.000502428  Max(alpha1) = 1.00001
+ExecutionTime = 2.67 s  ClockTime = 3 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00574178 max: 0.410978 velocity magnitude: 0.923479
+deltaT = 0.000818391
+Time = 0.00608735
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00111843, Final residual = 1.07709e-11, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00303027, Final residual = 4.12769e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0251386, Final residual = 9.51056e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0187127, Final residual = 8.24324e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0137362, Final residual = 5.82301e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.010494, Final residual = 8.06718e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00823383, Final residual = 6.30825e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00660421, Final residual = 5.83947e-08, No Iterations 11
+mag(U): max: 1.93399 avg: 0.200009
+time step continuity errors : sum local = 1.87458e-11, global = 1.1914e-13, cumulative = 1.62665e-12
+BiCGStab:  Solving for alpha1, Initial residual = 7.00344e-06, Final residual = 4.18705e-10, No Iterations 1
+Liquid phase volume fraction = 0.500437  Min(alpha1) = -0.000541948  Max(alpha1) = 1.00001
+BiCGStab:  Solving for Ux, Initial residual = 0.00109082, Final residual = 2.59708e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00401325, Final residual = 5.41332e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.023333, Final residual = 6.8761e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0152723, Final residual = 4.82834e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00493534, Final residual = 5.96916e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00278781, Final residual = 7.10927e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00170977, Final residual = 6.44212e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00125676, Final residual = 6.15291e-08, No Iterations 9
+mag(U): max: 1.88954 avg: 0.1994
+time step continuity errors : sum local = 2.11602e-11, global = -6.52033e-13, cumulative = 9.74622e-13
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000508732, Final residual = 6.76267e-08, No Iterations 9
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 8.5527e-07, Final residual = 1.06573e-10, No Iterations 1
+Liquid phase volume fraction = 0.500437  Min(alpha1) = -0.000548784  Max(alpha1) = 1.00001
+ExecutionTime = 2.94 s  ClockTime = 3 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00541842 max: 0.398425 velocity magnitude: 0.947037
+deltaT = 0.000818391
+Time = 0.00690574
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00107208, Final residual = 1.43252e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00296405, Final residual = 4.14006e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0229135, Final residual = 7.80762e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0170583, Final residual = 6.72191e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0124767, Final residual = 9.03428e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00935185, Final residual = 6.90227e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00705366, Final residual = 5.33502e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00547427, Final residual = 8.99543e-08, No Iterations 10
+mag(U): max: 1.97893 avg: 0.200143
+time step continuity errors : sum local = 2.86508e-11, global = -6.50115e-14, cumulative = 9.0961e-13
+BiCGStab:  Solving for alpha1, Initial residual = 7.00607e-06, Final residual = 3.93666e-10, No Iterations 1
+Liquid phase volume fraction = 0.500436  Min(alpha1) = -0.000588094  Max(alpha1) = 1.00011
+BiCGStab:  Solving for Ux, Initial residual = 0.00102913, Final residual = 2.76592e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00394808, Final residual = 6.1193e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0222053, Final residual = 6.62132e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0153896, Final residual = 5.01872e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00490678, Final residual = 6.71878e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00296439, Final residual = 9.10568e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00174696, Final residual = 7.6515e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00127006, Final residual = 6.51116e-08, No Iterations 9
+mag(U): max: 1.93696 avg: 0.199561
+time step continuity errors : sum local = 2.18485e-11, global = -4.23458e-13, cumulative = 4.86153e-13
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000470551, Final residual = 5.4731e-08, No Iterations 9
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 8.4436e-07, Final residual = 1.24969e-10, No Iterations 1
+Liquid phase volume fraction = 0.500436  Min(alpha1) = -0.000593822  Max(alpha1) = 1.00011
+ExecutionTime = 3.2 s  ClockTime = 4 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00541381 max: 0.40773 velocity magnitude: 0.968366
+deltaT = 0.000770251
+Time = 0.00767599
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000938615, Final residual = 1.53607e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00268772, Final residual = 3.11838e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0242315, Final residual = 7.89252e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0177422, Final residual = 5.31633e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0127718, Final residual = 9.5409e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00951578, Final residual = 6.84276e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00724459, Final residual = 5.5155e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00556508, Final residual = 9.80215e-08, No Iterations 10
+mag(U): max: 2.01749 avg: 0.200273
+time step continuity errors : sum local = 2.79576e-11, global = -5.44814e-13, cumulative = -5.86616e-14
+BiCGStab:  Solving for alpha1, Initial residual = 6.58875e-06, Final residual = 3.07591e-10, No Iterations 1
+Liquid phase volume fraction = 0.500435  Min(alpha1) = -0.000629992  Max(alpha1) = 1.0002
+BiCGStab:  Solving for Ux, Initial residual = 0.000959074, Final residual = 1.69453e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00388112, Final residual = 5.88155e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0236304, Final residual = 6.62179e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0160557, Final residual = 5.46524e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00501766, Final residual = 6.95021e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00308164, Final residual = 9.18535e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00193436, Final residual = 7.49062e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00140056, Final residual = 7.01356e-08, No Iterations 9
+mag(U): max: 1.97836 avg: 0.199702
+time step continuity errors : sum local = 2.07891e-11, global = 6.42066e-13, cumulative = 5.83404e-13
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000444568, Final residual = 4.97315e-08, No Iterations 9
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 7.6112e-07, Final residual = 1.0636e-10, No Iterations 1
+Liquid phase volume fraction = 0.500435  Min(alpha1) = -0.000632805  Max(alpha1) = 1.0002
+ExecutionTime = 3.46 s  ClockTime = 4 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00509255 max: 0.391335 velocity magnitude: 0.986518
+deltaT = 0.000770251
+Time = 0.00844624
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000907181, Final residual = 1.61892e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00266417, Final residual = 2.87838e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0246345, Final residual = 7.91946e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0171226, Final residual = 6.99734e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0121853, Final residual = 9.23863e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00901243, Final residual = 7.30889e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00685712, Final residual = 6.07547e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00526596, Final residual = 9.60245e-08, No Iterations 10
+mag(U): max: 2.05298 avg: 0.200332
+time step continuity errors : sum local = 2.64214e-11, global = -8.40053e-13, cumulative = -2.56649e-13
+BiCGStab:  Solving for alpha1, Initial residual = 6.61249e-06, Final residual = 3.18849e-10, No Iterations 1
+Liquid phase volume fraction = 0.500434  Min(alpha1) = -0.000680194  Max(alpha1) = 1.00031
+BiCGStab:  Solving for Ux, Initial residual = 0.000915937, Final residual = 3.53749e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00375414, Final residual = 6.82671e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.024106, Final residual = 6.69656e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0161468, Final residual = 5.19194e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00535883, Final residual = 7.61691e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00299185, Final residual = 9.38122e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00185824, Final residual = 8.51693e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00129029, Final residual = 7.20344e-08, No Iterations 9
+mag(U): max: 2.01617 avg: 0.199758
+time step continuity errors : sum local = 2.05216e-11, global = 1.18057e-13, cumulative = -1.38592e-13
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000415923, Final residual = 4.42076e-08, No Iterations 9
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 7.50045e-07, Final residual = 1.04556e-10, No Iterations 1
+Liquid phase volume fraction = 0.500434  Min(alpha1) = -0.000700255  Max(alpha1) = 1.00031
+ExecutionTime = 3.71 s  ClockTime = 4 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00509102 max: 0.398493 velocity magnitude: 1.00342
+deltaT = 0.000770251
+Time = 0.00921649
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000848972, Final residual = 2.90219e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00253134, Final residual = 2.90983e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0269345, Final residual = 7.54893e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0187661, Final residual = 6.52995e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0134987, Final residual = 5.43774e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0100948, Final residual = 7.40309e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00768843, Final residual = 4.79862e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00592217, Final residual = 5.88851e-08, No Iterations 11
+mag(U): max: 2.08545 avg: 0.200379
+time step continuity errors : sum local = 1.58166e-11, global = -9.3842e-13, cumulative = -1.07701e-12
+BiCGStab:  Solving for alpha1, Initial residual = 6.65017e-06, Final residual = 3.23815e-10, No Iterations 1
+Liquid phase volume fraction = 0.500433  Min(alpha1) = -0.000992566  Max(alpha1) = 1.00041
+BiCGStab:  Solving for Ux, Initial residual = 0.000876586, Final residual = 6.93289e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00365716, Final residual = 6.2902e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0253704, Final residual = 6.82782e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0162506, Final residual = 5.51923e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00502395, Final residual = 8.06689e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00275724, Final residual = 9.44729e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.0016817, Final residual = 8.01536e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00119586, Final residual = 5.74844e-08, No Iterations 9
+mag(U): max: 2.0503 avg: 0.199814
+time step continuity errors : sum local = 1.61231e-11, global = 7.06491e-13, cumulative = -3.70521e-13
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000390543, Final residual = 3.90834e-08, No Iterations 9
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 8.18269e-07, Final residual = 9.91354e-11, No Iterations 1
+Liquid phase volume fraction = 0.500433  Min(alpha1) = -0.00101368  Max(alpha1) = 1.00041
+ExecutionTime = 3.95 s  ClockTime = 5 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00509014 max: 0.405104 velocity magnitude: 1.01882
+deltaT = 0.0007189
+Time = 0.00993539
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000750385, Final residual = 8.93246e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00226422, Final residual = 3.07607e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0305844, Final residual = 8.43758e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0208075, Final residual = 7.37721e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0147279, Final residual = 9.9281e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0107763, Final residual = 7.61402e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00814368, Final residual = 5.33178e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00634721, Final residual = 6.61012e-08, No Iterations 11
+mag(U): max: 2.11385 avg: 0.200445
+time step continuity errors : sum local = 1.57686e-11, global = -1.23239e-12, cumulative = -1.60291e-12
+BiCGStab:  Solving for alpha1, Initial residual = 6.23731e-06, Final residual = 2.29504e-10, No Iterations 1
+Liquid phase volume fraction = 0.500432  Min(alpha1) = -0.00128309  Max(alpha1) = 1.00052
+BiCGStab:  Solving for Ux, Initial residual = 0.000827807, Final residual = 2.48951e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00353228, Final residual = 3.68705e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0268911, Final residual = 7.73951e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.016536, Final residual = 5.49039e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00505136, Final residual = 8.35327e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00292925, Final residual = 6.03571e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.0017887, Final residual = 8.14654e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00129761, Final residual = 5.69818e-08, No Iterations 9
+mag(U): max: 2.08099 avg: 0.199893
+time step continuity errors : sum local = 1.40271e-11, global = 5.94406e-14, cumulative = -1.54347e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000386864, Final residual = 3.6933e-08, No Iterations 9
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 7.5984e-07, Final residual = 9.4412e-11, No Iterations 1
+Liquid phase volume fraction = 0.500432  Min(alpha1) = -0.00130295  Max(alpha1) = 1.00052
+ExecutionTime = 4.21 s  ClockTime = 5 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.0047493 max: 0.383485 velocity magnitude: 1.03172
+deltaT = 0.0007189
+Time = 0.0106543
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000744496, Final residual = 8.55393e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00225892, Final residual = 3.25978e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0296879, Final residual = 8.96415e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0202005, Final residual = 5.93735e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0141054, Final residual = 5.14315e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0102919, Final residual = 9.24113e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0076913, Final residual = 5.75659e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00589357, Final residual = 7.90749e-08, No Iterations 11
+mag(U): max: 2.14068 avg: 0.200475
+time step continuity errors : sum local = 1.84389e-11, global = -1.45592e-12, cumulative = -2.99939e-12
+BiCGStab:  Solving for alpha1, Initial residual = 6.28972e-06, Final residual = 2.45138e-10, No Iterations 1
+Liquid phase volume fraction = 0.500432  Min(alpha1) = -0.00157494  Max(alpha1) = 1.00063
+BiCGStab:  Solving for Ux, Initial residual = 0.000799874, Final residual = 3.98429e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00341322, Final residual = 4.17557e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0279671, Final residual = 8.01211e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0169751, Final residual = 5.74572e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00536061, Final residual = 8.30908e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00285577, Final residual = 9.78562e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00176786, Final residual = 8.30745e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00128613, Final residual = 7.45713e-08, No Iterations 9
+mag(U): max: 2.10952 avg: 0.199939
+time step continuity errors : sum local = 1.79773e-11, global = -2.82044e-13, cumulative = -3.28143e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000370078, Final residual = 3.55008e-08, No Iterations 9
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 7.61617e-07, Final residual = 8.68383e-11, No Iterations 1
+Liquid phase volume fraction = 0.500432  Min(alpha1) = -0.00159373  Max(alpha1) = 1.00063
+ExecutionTime = 4.47 s  ClockTime = 5 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00474752 max: 0.388642 velocity magnitude: 1.04381
+deltaT = 0.0007189
+Time = 0.0113732
+
+BiCGStab:  Solving for Ux, Initial residual = 0.0007145, Final residual = 7.42954e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00217204, Final residual = 2.1873e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0317619, Final residual = 6.74294e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0213098, Final residual = 7.15328e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0148486, Final residual = 7.51866e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0108226, Final residual = 7.50901e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00811339, Final residual = 5.75163e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00625942, Final residual = 5.37262e-08, No Iterations 11
+mag(U): max: 2.16554 avg: 0.200508
+time step continuity errors : sum local = 1.22838e-11, global = -1.49746e-12, cumulative = -4.7789e-12
+BiCGStab:  Solving for alpha1, Initial residual = 6.29754e-06, Final residual = 2.4187e-10, No Iterations 1
+Liquid phase volume fraction = 0.500431  Min(alpha1) = -0.00186804  Max(alpha1) = 1.00074
+BiCGStab:  Solving for Ux, Initial residual = 0.000771233, Final residual = 7.43286e-12, No Iterations 2
+BiCGStab:  Solving for Uy, Initial residual = 0.00333564, Final residual = 4.30457e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0290202, Final residual = 8.11727e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0169074, Final residual = 6.78946e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00528472, Final residual = 7.76054e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00281832, Final residual = 9.80341e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00175301, Final residual = 9.06999e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00126906, Final residual = 6.37933e-08, No Iterations 9
+mag(U): max: 2.13625 avg: 0.199973
+time step continuity errors : sum local = 1.51204e-11, global = -1.04698e-12, cumulative = -5.82588e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000351376, Final residual = 9.8846e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 8.31778e-07, Final residual = 7.42547e-11, No Iterations 1
+Liquid phase volume fraction = 0.500431  Min(alpha1) = -0.00188551  Max(alpha1) = 1.00074
+ExecutionTime = 4.72 s  ClockTime = 6 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00474705 max: 0.393593 velocity magnitude: 1.05514
+deltaT = 0.0007189
+Time = 0.0120921
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000687151, Final residual = 7.73033e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00210327, Final residual = 3.13972e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0330451, Final residual = 5.29103e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0219641, Final residual = 8.32368e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0153061, Final residual = 6.11598e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0110913, Final residual = 9.09327e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00834078, Final residual = 7.06316e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00645555, Final residual = 5.796e-08, No Iterations 11
+mag(U): max: 2.18895 avg: 0.200541
+time step continuity errors : sum local = 1.30069e-11, global = 1.25724e-12, cumulative = -4.56864e-12
+BiCGStab:  Solving for alpha1, Initial residual = 6.39427e-06, Final residual = 2.43217e-10, No Iterations 1
+Liquid phase volume fraction = 0.50043  Min(alpha1) = -0.00216063  Max(alpha1) = 1.00086
+BiCGStab:  Solving for Ux, Initial residual = 0.000744391, Final residual = 8.35278e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00328199, Final residual = 2.86391e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0304823, Final residual = 8.8752e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0175859, Final residual = 7.08214e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00546064, Final residual = 8.01342e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.0029921, Final residual = 7.0097e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00182626, Final residual = 5.73632e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00126454, Final residual = 6.78579e-08, No Iterations 9
+mag(U): max: 2.16113 avg: 0.20001
+time step continuity errors : sum local = 1.57282e-11, global = -7.99949e-13, cumulative = -5.36859e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000336889, Final residual = 9.57375e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 7.59422e-07, Final residual = 1.00312e-10, No Iterations 1
+Liquid phase volume fraction = 0.50043  Min(alpha1) = -0.00217673  Max(alpha1) = 1.00086
+ExecutionTime = 4.99 s  ClockTime = 6 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00474544 max: 0.398277 velocity magnitude: 1.06569
+deltaT = 0.0007189
+Time = 0.012811
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000658264, Final residual = 8.23342e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00204341, Final residual = 5.17683e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0344907, Final residual = 5.45677e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0228469, Final residual = 8.02614e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0157446, Final residual = 6.08831e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.011306, Final residual = 9.23483e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00844506, Final residual = 6.7691e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00656995, Final residual = 6.12632e-08, No Iterations 11
+mag(U): max: 2.21098 avg: 0.200574
+time step continuity errors : sum local = 1.35985e-11, global = 1.07363e-12, cumulative = -4.29496e-12
+BiCGStab:  Solving for alpha1, Initial residual = 6.44265e-06, Final residual = 2.42125e-10, No Iterations 1
+Liquid phase volume fraction = 0.50043  Min(alpha1) = -0.00245155  Max(alpha1) = 1.00098
+BiCGStab:  Solving for Ux, Initial residual = 0.000720223, Final residual = 7.66569e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00327741, Final residual = 2.54044e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0315424, Final residual = 8.82999e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0176043, Final residual = 6.8173e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00568275, Final residual = 8.09373e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00315631, Final residual = 6.79003e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.0019146, Final residual = 6.62558e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00133076, Final residual = 9.38888e-08, No Iterations 9
+mag(U): max: 2.18473 avg: 0.200046
+time step continuity errors : sum local = 2.1674e-11, global = -2.08993e-13, cumulative = -4.50395e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000328767, Final residual = 9.08626e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 7.15587e-07, Final residual = 9.65425e-11, No Iterations 1
+Liquid phase volume fraction = 0.50043  Min(alpha1) = -0.00246646  Max(alpha1) = 1.00098
+ExecutionTime = 5.25 s  ClockTime = 6 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00474282 max: 0.402793 velocity magnitude: 1.07565
+deltaT = 0.000653546
+Time = 0.0134645
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000585596, Final residual = 5.39693e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00185987, Final residual = 1.84497e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0386301, Final residual = 5.54058e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0250353, Final residual = 7.36096e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0170965, Final residual = 5.78878e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0121734, Final residual = 8.44437e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00907647, Final residual = 6.51634e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00702156, Final residual = 5.8379e-08, No Iterations 11
+mag(U): max: 2.23143 avg: 0.200628
+time step continuity errors : sum local = 1.12069e-11, global = 4.22318e-13, cumulative = -4.08163e-12
+BiCGStab:  Solving for alpha1, Initial residual = 5.88473e-06, Final residual = 1.61499e-10, No Iterations 1
+Liquid phase volume fraction = 0.500429  Min(alpha1) = -0.00270899  Max(alpha1) = 1.00109
+BiCGStab:  Solving for Ux, Initial residual = 0.00068427, Final residual = 6.55838e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00322777, Final residual = 1.78804e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.033031, Final residual = 8.23578e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0182103, Final residual = 6.91548e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0057451, Final residual = 7.20969e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00318629, Final residual = 8.349e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00191908, Final residual = 7.81573e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.001372, Final residual = 7.13001e-08, No Iterations 9
+mag(U): max: 2.20686 avg: 0.200118
+time step continuity errors : sum local = 1.40132e-11, global = -1.20238e-12, cumulative = -5.28401e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000340231, Final residual = 9.23084e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 6.16322e-07, Final residual = 5.15029e-11, No Iterations 1
+Liquid phase volume fraction = 0.500429  Min(alpha1) = -0.00272077  Max(alpha1) = 1.00109
+ExecutionTime = 5.52 s  ClockTime = 7 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.0043089 max: 0.369709 velocity magnitude: 1.08357
+deltaT = 0.000653546
+Time = 0.0141181
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000599299, Final residual = 4.68721e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00195249, Final residual = 1.28449e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0359194, Final residual = 9.30463e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.023469, Final residual = 6.30357e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0159892, Final residual = 4.97084e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0113541, Final residual = 7.76944e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00847395, Final residual = 6.74242e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00637932, Final residual = 9.12499e-08, No Iterations 10
+mag(U): max: 2.25158 avg: 0.20065
+time step continuity errors : sum local = 1.72002e-11, global = 6.49569e-13, cumulative = -4.63444e-12
+BiCGStab:  Solving for alpha1, Initial residual = 5.93405e-06, Final residual = 1.47567e-10, No Iterations 1
+Liquid phase volume fraction = 0.500428  Min(alpha1) = -0.00296325  Max(alpha1) = 1.0012
+BiCGStab:  Solving for Ux, Initial residual = 0.000665142, Final residual = 6.6917e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00320624, Final residual = 1.81073e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0340547, Final residual = 8.8302e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0186028, Final residual = 6.69984e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00584716, Final residual = 8.44704e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00321549, Final residual = 8.08485e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00194681, Final residual = 9.87481e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00141365, Final residual = 8.63351e-08, No Iterations 9
+mag(U): max: 2.2279 avg: 0.200138
+time step continuity errors : sum local = 1.65106e-11, global = -9.27575e-13, cumulative = -5.56202e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000324815, Final residual = 6.78621e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 6.87271e-07, Final residual = 5.15889e-11, No Iterations 1
+Liquid phase volume fraction = 0.500428  Min(alpha1) = -0.00297401  Max(alpha1) = 1.0012
+ExecutionTime = 5.76 s  ClockTime = 7 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00430737 max: 0.373179 velocity magnitude: 1.09118
+deltaT = 0.000653546
+Time = 0.0147716
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000579868, Final residual = 4.67503e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00193258, Final residual = 1.45539e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0371834, Final residual = 9.00691e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0241341, Final residual = 5.92652e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0166429, Final residual = 9.61386e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0119361, Final residual = 6.95475e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00888358, Final residual = 6.81494e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00684291, Final residual = 6.01758e-08, No Iterations 11
+mag(U): max: 2.27064 avg: 0.20068
+time step continuity errors : sum local = 1.11893e-11, global = 6.8218e-13, cumulative = -4.87984e-12
+BiCGStab:  Solving for alpha1, Initial residual = 5.96938e-06, Final residual = 1.33181e-10, No Iterations 1
+Liquid phase volume fraction = 0.500428  Min(alpha1) = -0.00321548  Max(alpha1) = 1.00132
+BiCGStab:  Solving for Ux, Initial residual = 0.000644444, Final residual = 5.36419e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00320431, Final residual = 1.45418e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0352765, Final residual = 9.08031e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0182743, Final residual = 6.55516e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00566135, Final residual = 7.34561e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00319262, Final residual = 7.91369e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.0019545, Final residual = 9.64664e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00136967, Final residual = 6.4698e-08, No Iterations 9
+mag(U): max: 2.24744 avg: 0.200173
+time step continuity errors : sum local = 1.23017e-11, global = -5.4933e-13, cumulative = -5.42917e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000304353, Final residual = 7.32362e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 6.36333e-07, Final residual = 6.34089e-11, No Iterations 1
+Liquid phase volume fraction = 0.500428  Min(alpha1) = -0.00322482  Max(alpha1) = 1.00132
+ExecutionTime = 6.02 s  ClockTime = 7 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00430534 max: 0.37645 velocity magnitude: 1.09832
+deltaT = 0.000653546
+Time = 0.0154252
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00055597, Final residual = 5.37627e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00191403, Final residual = 3.43605e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0384692, Final residual = 6.25312e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0251471, Final residual = 6.86867e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0171224, Final residual = 9.43071e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0121659, Final residual = 8.21496e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00900342, Final residual = 5.50309e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00682524, Final residual = 9.90991e-08, No Iterations 10
+mag(U): max: 2.28818 avg: 0.200707
+time step continuity errors : sum local = 1.8214e-11, global = -5.81167e-13, cumulative = -6.01033e-12
+BiCGStab:  Solving for alpha1, Initial residual = 5.99902e-06, Final residual = 1.35533e-10, No Iterations 1
+Liquid phase volume fraction = 0.500427  Min(alpha1) = -0.00346493  Max(alpha1) = 1.00143
+BiCGStab:  Solving for Ux, Initial residual = 0.000626922, Final residual = 4.58808e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00323616, Final residual = 1.22881e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0359994, Final residual = 9.40786e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0186763, Final residual = 7.02059e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00590619, Final residual = 8.35648e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00356178, Final residual = 9.31118e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00223701, Final residual = 9.91085e-08, No Iterations 9
+CG:  Solving for pd, Initial residual = 0.00161907, Final residual = 7.36364e-08, No Iterations 9
+mag(U): max: 2.26554 avg: 0.200204
+time step continuity errors : sum local = 1.37605e-11, global = -8.38194e-15, cumulative = -6.01872e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00029515, Final residual = 7.1162e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 5.92547e-07, Final residual = 6.34507e-11, No Iterations 1
+Liquid phase volume fraction = 0.500427  Min(alpha1) = -0.00347394  Max(alpha1) = 1.00143
+ExecutionTime = 6.28 s  ClockTime = 8 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00430339 max: 0.379523 velocity magnitude: 1.10492
+deltaT = 0.000653546
+Time = 0.0160787
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000543926, Final residual = 5.32056e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00192245, Final residual = 3.32161e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0393179, Final residual = 6.23978e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0254777, Final residual = 6.43341e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0173619, Final residual = 9.11671e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0123399, Final residual = 7.17977e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00912516, Final residual = 6.21459e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00687743, Final residual = 8.50957e-08, No Iterations 11
+mag(U): max: 2.30472 avg: 0.200736
+time step continuity errors : sum local = 1.53403e-11, global = -1.20897e-12, cumulative = -7.22769e-12
+BiCGStab:  Solving for alpha1, Initial residual = 6.05764e-06, Final residual = 1.51738e-10, No Iterations 1
+Liquid phase volume fraction = 0.500427  Min(alpha1) = -0.00371256  Max(alpha1) = 1.00155
+BiCGStab:  Solving for Ux, Initial residual = 0.000611492, Final residual = 4.56763e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00329607, Final residual = 1.48767e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0368463, Final residual = 9.37956e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0187378, Final residual = 7.1375e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00609476, Final residual = 8.77488e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00353534, Final residual = 8.52693e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0021986, Final residual = 8.00546e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00164795, Final residual = 9.13088e-08, No Iterations 9
+mag(U): max: 2.28228 avg: 0.200238
+time step continuity errors : sum local = 1.66595e-11, global = -9.00826e-13, cumulative = -8.12852e-12
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00029032, Final residual = 4.53211e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 5.69453e-07, Final residual = 5.22057e-11, No Iterations 1
+Liquid phase volume fraction = 0.500427  Min(alpha1) = -0.00372123  Max(alpha1) = 1.00155
+ExecutionTime = 6.53 s  ClockTime = 8 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00430073 max: 0.382396 velocity magnitude: 1.11102
+deltaT = 0.000653546
+Time = 0.0167323
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000534089, Final residual = 4.16679e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00195212, Final residual = 1.35243e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0392223, Final residual = 5.87947e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.025332, Final residual = 8.32566e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0173857, Final residual = 7.11374e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0123026, Final residual = 6.60835e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00898939, Final residual = 5.42159e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00685918, Final residual = 9.52967e-08, No Iterations 10
+mag(U): max: 2.31975 avg: 0.200765
+time step continuity errors : sum local = 1.71187e-11, global = -1.05043e-12, cumulative = -9.17894e-12
+BiCGStab:  Solving for alpha1, Initial residual = 6.11967e-06, Final residual = 1.48316e-10, No Iterations 1
+Liquid phase volume fraction = 0.500426  Min(alpha1) = -0.0039584  Max(alpha1) = 1.00167
+BiCGStab:  Solving for Ux, Initial residual = 0.00059678, Final residual = 4.90212e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00334426, Final residual = 1.66216e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0374628, Final residual = 9.39055e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0186284, Final residual = 7.07795e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0060224, Final residual = 9.11048e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00362265, Final residual = 8.55934e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00235509, Final residual = 7.75887e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00170943, Final residual = 8.80172e-08, No Iterations 9
+mag(U): max: 2.29785 avg: 0.200274
+time step continuity errors : sum local = 1.60572e-11, global = -1.02041e-12, cumulative = -1.01994e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00028418, Final residual = 4.33236e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 5.74128e-07, Final residual = 4.03158e-11, No Iterations 1
+Liquid phase volume fraction = 0.500426  Min(alpha1) = -0.0039659  Max(alpha1) = 1.00167
+ExecutionTime = 6.79 s  ClockTime = 8 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00429896 max: 0.385094 velocity magnitude: 1.11672
+deltaT = 0.000653546
+Time = 0.0173858
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000526778, Final residual = 3.64169e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00197741, Final residual = 1.00857e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0394642, Final residual = 5.14873e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0256222, Final residual = 7.9322e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0173762, Final residual = 6.27702e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0122916, Final residual = 8.67199e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00902512, Final residual = 7.7778e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00677985, Final residual = 9.398e-08, No Iterations 10
+mag(U): max: 2.33355 avg: 0.200796
+time step continuity errors : sum local = 1.68398e-11, global = -2.46725e-13, cumulative = -1.04461e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.1332e-06, Final residual = 1.30507e-10, No Iterations 1
+Liquid phase volume fraction = 0.500426  Min(alpha1) = -0.00420137  Max(alpha1) = 1.00179
+BiCGStab:  Solving for Ux, Initial residual = 0.000581663, Final residual = 4.88693e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00337381, Final residual = 1.52064e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0375215, Final residual = 9.10065e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0186549, Final residual = 6.99533e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0062553, Final residual = 9.17732e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00380365, Final residual = 8.60106e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00245073, Final residual = 8.05482e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00178403, Final residual = 8.07993e-08, No Iterations 9
+mag(U): max: 2.31167 avg: 0.20031
+time step continuity errors : sum local = 1.47721e-11, global = -4.93314e-14, cumulative = -1.04954e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00027877, Final residual = 3.95028e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 6.44847e-07, Final residual = 4.56332e-11, No Iterations 1
+Liquid phase volume fraction = 0.500426  Min(alpha1) = -0.00420731  Max(alpha1) = 1.00179
+ExecutionTime = 7.04 s  ClockTime = 8 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00429818 max: 0.38748 velocity magnitude: 1.12187
+deltaT = 0.000653546
+Time = 0.0180394
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00051893, Final residual = 3.92789e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00199601, Final residual = 5.63345e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0394578, Final residual = 6.48842e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.025803, Final residual = 8.30373e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0175161, Final residual = 9.84119e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0123944, Final residual = 7.96871e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00914183, Final residual = 6.8447e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00693529, Final residual = 9.06889e-08, No Iterations 10
+mag(U): max: 2.34572 avg: 0.200829
+time step continuity errors : sum local = 1.61436e-11, global = -9.62712e-13, cumulative = -1.14581e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.08083e-06, Final residual = 1.17438e-10, No Iterations 1
+Liquid phase volume fraction = 0.500425  Min(alpha1) = -0.00444088  Max(alpha1) = 1.00191
+BiCGStab:  Solving for Ux, Initial residual = 0.000567248, Final residual = 4.00511e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00340091, Final residual = 1.26847e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0374506, Final residual = 9.12405e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0186783, Final residual = 7.16306e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00616819, Final residual = 9.60511e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00370945, Final residual = 8.17735e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00239286, Final residual = 8.03894e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00171377, Final residual = 6.83415e-08, No Iterations 10
+mag(U): max: 2.32436 avg: 0.200347
+time step continuity errors : sum local = 1.232e-11, global = 1.01061e-13, cumulative = -1.13571e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000270226, Final residual = 3.82153e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 5.88027e-07, Final residual = 4.9696e-11, No Iterations 1
+Liquid phase volume fraction = 0.500425  Min(alpha1) = -0.00444555  Max(alpha1) = 1.00191
+ExecutionTime = 7.3 s  ClockTime = 9 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00429682 max: 0.389693 velocity magnitude: 1.12661
+deltaT = 0.000653546
+Time = 0.0186929
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000502069, Final residual = 4.57465e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00201363, Final residual = 2.99249e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0399923, Final residual = 6.53919e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0261318, Final residual = 9.89801e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.017714, Final residual = 6.35931e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0125728, Final residual = 8.35971e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00936589, Final residual = 7.08237e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00712943, Final residual = 6.54285e-08, No Iterations 11
+mag(U): max: 2.35718 avg: 0.200859
+time step continuity errors : sum local = 1.14738e-11, global = -1.01082e-12, cumulative = -1.23679e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.10764e-06, Final residual = 1.11546e-10, No Iterations 1
+Liquid phase volume fraction = 0.500425  Min(alpha1) = -0.00467646  Max(alpha1) = 1.00203
+BiCGStab:  Solving for Ux, Initial residual = 0.000555708, Final residual = 3.84588e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00348155, Final residual = 1.27558e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0382665, Final residual = 9.35937e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0193615, Final residual = 8.0537e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00669115, Final residual = 9.86157e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00412549, Final residual = 7.6434e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.0026794, Final residual = 8.42723e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00193868, Final residual = 8.70687e-08, No Iterations 11
+mag(U): max: 2.33669 avg: 0.200382
+time step continuity errors : sum local = 1.53123e-11, global = 7.63736e-13, cumulative = -1.16042e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000267838, Final residual = 3.65021e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 5.52762e-07, Final residual = 4.99795e-11, No Iterations 1
+Liquid phase volume fraction = 0.500424  Min(alpha1) = -0.00468111  Max(alpha1) = 1.00203
+ExecutionTime = 7.54 s  ClockTime = 9 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00429608 max: 0.391882 velocity magnitude: 1.13122
+deltaT = 0.000653546
+Time = 0.0193465
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000495751, Final residual = 4.83886e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00205528, Final residual = 4.94635e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0413761, Final residual = 5.49022e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0268307, Final residual = 8.48243e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0181229, Final residual = 8.57602e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0128464, Final residual = 6.4864e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00952978, Final residual = 7.04517e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00714521, Final residual = 9.73547e-08, No Iterations 10
+mag(U): max: 2.36833 avg: 0.200888
+time step continuity errors : sum local = 1.67139e-11, global = -1.75458e-12, cumulative = -1.33587e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.16376e-06, Final residual = 1.25245e-10, No Iterations 1
+Liquid phase volume fraction = 0.500424  Min(alpha1) = -0.00490874  Max(alpha1) = 1.00215
+BiCGStab:  Solving for Ux, Initial residual = 0.000545228, Final residual = 3.93723e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00361421, Final residual = 1.51496e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0391318, Final residual = 8.3794e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0195233, Final residual = 7.94273e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00669286, Final residual = 6.63388e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00402614, Final residual = 8.71577e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00265299, Final residual = 8.83486e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00197821, Final residual = 9.01213e-08, No Iterations 10
+mag(U): max: 2.34832 avg: 0.200415
+time step continuity errors : sum local = 1.54284e-11, global = -2.4611e-13, cumulative = -1.36048e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000268027, Final residual = 3.69671e-08, No Iterations 8
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 5.15445e-07, Final residual = 4.40527e-11, No Iterations 1
+Liquid phase volume fraction = 0.500424  Min(alpha1) = -0.00491393  Max(alpha1) = 1.00215
+ExecutionTime = 7.8 s  ClockTime = 9 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00429464 max: 0.393953 velocity magnitude: 1.1356
+deltaT = 0.000653546
+Time = 0.02
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000491604, Final residual = 3.97178e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00214284, Final residual = 2.61719e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0410756, Final residual = 8.38909e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0265484, Final residual = 6.48975e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0178913, Final residual = 5.72056e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.012549, Final residual = 9.26814e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00924231, Final residual = 7.11771e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00708242, Final residual = 6.01095e-08, No Iterations 11
+mag(U): max: 2.37874 avg: 0.200915
+time step continuity errors : sum local = 1.02628e-11, global = -9.23514e-13, cumulative = -1.45284e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.21828e-06, Final residual = 1.35648e-10, No Iterations 1
+Liquid phase volume fraction = 0.500424  Min(alpha1) = -0.00513797  Max(alpha1) = 1.00227
+BiCGStab:  Solving for Ux, Initial residual = 0.000534431, Final residual = 4.10371e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00372268, Final residual = 1.88766e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0394419, Final residual = 7.01077e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0193143, Final residual = 8.22999e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0066515, Final residual = 7.51966e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00399226, Final residual = 8.17229e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00253245, Final residual = 8.21336e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00182055, Final residual = 8.14466e-08, No Iterations 10
+mag(U): max: 2.3593 avg: 0.200447
+time step continuity errors : sum local = 1.39554e-11, global = 3.46455e-13, cumulative = -1.41819e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000264963, Final residual = 7.84389e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 5.13305e-07, Final residual = 3.45875e-11, No Iterations 1
+Liquid phase volume fraction = 0.500423  Min(alpha1) = -0.00514289  Max(alpha1) = 1.00227
+ExecutionTime = 8.11 s  ClockTime = 9 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00429301 max: 0.395918 velocity magnitude: 1.13977
+deltaT = 0.000645161
+Time = 0.0206452
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00048299, Final residual = 3.03242e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00218339, Final residual = 2.4456e-12, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0421411, Final residual = 7.04303e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0269323, Final residual = 8.51494e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0180645, Final residual = 9.33586e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0126846, Final residual = 7.66989e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00924752, Final residual = 8.93789e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00701533, Final residual = 7.88984e-08, No Iterations 11
+mag(U): max: 2.38855 avg: 0.200942
+time step continuity errors : sum local = 1.32456e-11, global = -1.24045e-12, cumulative = -1.54223e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.1696e-06, Final residual = 1.27545e-10, No Iterations 1
+Liquid phase volume fraction = 0.500423  Min(alpha1) = -0.00535955  Max(alpha1) = 1.00239
+BiCGStab:  Solving for Ux, Initial residual = 0.00052119, Final residual = 4.03662e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00377375, Final residual = 1.84644e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0397776, Final residual = 9.50293e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0189742, Final residual = 7.59476e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00644156, Final residual = 9.07715e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00393284, Final residual = 8.99299e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0024924, Final residual = 7.55302e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00179251, Final residual = 8.57518e-08, No Iterations 10
+mag(U): max: 2.36963 avg: 0.200479
+time step continuity errors : sum local = 1.44922e-11, global = -1.0523e-13, cumulative = -1.55276e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000267186, Final residual = 7.21853e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 5.42112e-07, Final residual = 2.9591e-11, No Iterations 1
+Liquid phase volume fraction = 0.500423  Min(alpha1) = -0.00536331  Max(alpha1) = 1.00239
+ExecutionTime = 8.37 s  ClockTime = 10 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00423741 max: 0.39262 velocity magnitude: 1.14355
+deltaT = 0.000645161
+Time = 0.0212903
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000481185, Final residual = 3.00459e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00223379, Final residual = 2.55838e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0424393, Final residual = 6.99621e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0276323, Final residual = 8.61998e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0184578, Final residual = 9.43946e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0128814, Final residual = 7.33465e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00931284, Final residual = 7.97512e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00697697, Final residual = 7.57918e-08, No Iterations 11
+mag(U): max: 2.39771 avg: 0.200965
+time step continuity errors : sum local = 1.26831e-11, global = -7.54831e-13, cumulative = -1.62824e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.16133e-06, Final residual = 1.21064e-10, No Iterations 1
+Liquid phase volume fraction = 0.500423  Min(alpha1) = -0.00557594  Max(alpha1) = 1.00251
+BiCGStab:  Solving for Ux, Initial residual = 0.000510498, Final residual = 3.8968e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00380424, Final residual = 1.65205e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.03945, Final residual = 8.77468e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0193634, Final residual = 8.11181e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00672379, Final residual = 7.90927e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00412169, Final residual = 6.92001e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00262003, Final residual = 7.70412e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00196282, Final residual = 8.92052e-08, No Iterations 10
+mag(U): max: 2.3792 avg: 0.200504
+time step continuity errors : sum local = 1.49877e-11, global = 1.70772e-13, cumulative = -1.61116e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000266391, Final residual = 6.8358e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 5.81499e-07, Final residual = 3.41668e-11, No Iterations 1
+Liquid phase volume fraction = 0.500422  Min(alpha1) = -0.00557858  Max(alpha1) = 1.00251
+ExecutionTime = 8.63 s  ClockTime = 10 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.004237 max: 0.394282 velocity magnitude: 1.14706
+deltaT = 0.000645161
+Time = 0.0219355
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000472956, Final residual = 3.28121e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00223942, Final residual = 1.5468e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0434477, Final residual = 8.02413e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0281961, Final residual = 8.65808e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0188728, Final residual = 9.60269e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0132079, Final residual = 7.67375e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00956425, Final residual = 8.1355e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00713433, Final residual = 7.30073e-08, No Iterations 11
+mag(U): max: 2.40607 avg: 0.200986
+time step continuity errors : sum local = 1.20779e-11, global = -1.00744e-12, cumulative = -1.71191e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.09343e-06, Final residual = 1.16654e-10, No Iterations 1
+Liquid phase volume fraction = 0.500422  Min(alpha1) = -0.00578708  Max(alpha1) = 1.00263
+BiCGStab:  Solving for Ux, Initial residual = 0.000500566, Final residual = 3.65931e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00383824, Final residual = 1.49029e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0394607, Final residual = 6.1651e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0196066, Final residual = 8.23653e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00690487, Final residual = 9.33054e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00421198, Final residual = 7.66458e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00267096, Final residual = 8.98807e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00198101, Final residual = 9.4849e-08, No Iterations 9
+mag(U): max: 2.38776 avg: 0.200526
+time step continuity errors : sum local = 1.56224e-11, global = -1.36882e-12, cumulative = -1.84879e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000259242, Final residual = 9.72878e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 5.26968e-07, Final residual = 3.50486e-11, No Iterations 1
+Liquid phase volume fraction = 0.500422  Min(alpha1) = -0.00578936  Max(alpha1) = 1.00263
+ExecutionTime = 8.89 s  ClockTime = 10 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00423604 max: 0.395774 velocity magnitude: 1.15024
+deltaT = 0.000645161
+Time = 0.0225806
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000457572, Final residual = 3.82162e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00226106, Final residual = 2.60747e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0450653, Final residual = 5.9931e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0291269, Final residual = 7.36125e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0193872, Final residual = 7.00119e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0136077, Final residual = 9.13763e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00975965, Final residual = 7.7187e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00734169, Final residual = 7.97805e-08, No Iterations 11
+mag(U): max: 2.41359 avg: 0.201003
+time step continuity errors : sum local = 1.29271e-11, global = -9.37415e-13, cumulative = -1.94253e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.12242e-06, Final residual = 1.0694e-10, No Iterations 1
+Liquid phase volume fraction = 0.500422  Min(alpha1) = -0.00599348  Max(alpha1) = 1.00275
+BiCGStab:  Solving for Ux, Initial residual = 0.000492598, Final residual = 3.62404e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00397675, Final residual = 1.51063e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0406844, Final residual = 9.94306e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0198231, Final residual = 8.21491e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00714193, Final residual = 9.35902e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00433873, Final residual = 8.8693e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00278085, Final residual = 8.45056e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00201636, Final residual = 8.95305e-08, No Iterations 10
+mag(U): max: 2.39531 avg: 0.200544
+time step continuity errors : sum local = 1.42401e-11, global = 3.09557e-13, cumulative = -1.91158e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000259616, Final residual = 8.35833e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.95323e-07, Final residual = 3.42101e-11, No Iterations 1
+Liquid phase volume fraction = 0.500421  Min(alpha1) = -0.00599545  Max(alpha1) = 1.00275
+ExecutionTime = 9.15 s  ClockTime = 11 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00423517 max: 0.397091 velocity magnitude: 1.15306
+deltaT = 0.000645161
+Time = 0.0232258
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000453151, Final residual = 4.21071e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00235417, Final residual = 6.19265e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0453469, Final residual = 9.0892e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0293234, Final residual = 9.29408e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.019768, Final residual = 6.33695e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0139767, Final residual = 9.25809e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.010191, Final residual = 5.92138e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00766007, Final residual = 7.58291e-08, No Iterations 11
+mag(U): max: 2.42038 avg: 0.201015
+time step continuity errors : sum local = 1.20719e-11, global = -1.17239e-12, cumulative = -2.02881e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.16078e-06, Final residual = 1.10063e-10, No Iterations 1
+Liquid phase volume fraction = 0.500421  Min(alpha1) = -0.00619513  Max(alpha1) = 1.00287
+BiCGStab:  Solving for Ux, Initial residual = 0.000485065, Final residual = 3.64525e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00418733, Final residual = 1.52939e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0417622, Final residual = 7.33523e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0199746, Final residual = 8.41346e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00715169, Final residual = 9.67653e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00421467, Final residual = 7.65746e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00266828, Final residual = 7.86222e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00180329, Final residual = 9.53956e-08, No Iterations 9
+mag(U): max: 2.40195 avg: 0.200568
+time step continuity errors : sum local = 1.48967e-11, global = -1.02534e-12, cumulative = -2.13135e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000257088, Final residual = 7.69928e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.80052e-07, Final residual = 3.09286e-11, No Iterations 1
+Liquid phase volume fraction = 0.500421  Min(alpha1) = -0.00619483  Max(alpha1) = 1.00287
+ExecutionTime = 9.4 s  ClockTime = 11 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00423365 max: 0.398257 velocity magnitude: 1.15555
+deltaT = 0.000645161
+Time = 0.023871
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000452312, Final residual = 3.72907e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00249304, Final residual = 6.08129e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0454881, Final residual = 8.19903e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0291858, Final residual = 8.31746e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.019514, Final residual = 5.62049e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0136423, Final residual = 8.90174e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00999658, Final residual = 8.24306e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00758222, Final residual = 7.83269e-08, No Iterations 11
+mag(U): max: 2.42639 avg: 0.201031
+time step continuity errors : sum local = 1.24034e-11, global = -9.6959e-13, cumulative = -2.22831e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.19507e-06, Final residual = 1.19992e-10, No Iterations 1
+Liquid phase volume fraction = 0.500421  Min(alpha1) = -0.00638881  Max(alpha1) = 1.00299
+BiCGStab:  Solving for Ux, Initial residual = 0.000477103, Final residual = 3.73058e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.0043895, Final residual = 1.88551e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.042154, Final residual = 6.93861e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0199877, Final residual = 8.22649e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00697255, Final residual = 8.29154e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00415606, Final residual = 8.06178e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00259108, Final residual = 7.92183e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0017207, Final residual = 9.70587e-08, No Iterations 10
+mag(U): max: 2.40797 avg: 0.20059
+time step continuity errors : sum local = 1.51245e-11, global = -8.27224e-14, cumulative = -2.23658e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00025366, Final residual = 7.39607e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.56999e-07, Final residual = 2.80244e-11, No Iterations 1
+Liquid phase volume fraction = 0.500421  Min(alpha1) = -0.00638691  Max(alpha1) = 1.00299
+ExecutionTime = 9.66 s  ClockTime = 11 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00423166 max: 0.399324 velocity magnitude: 1.15781
+deltaT = 0.000645161
+Time = 0.0245161
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00045361, Final residual = 2.92921e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00264684, Final residual = 3.74654e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0463862, Final residual = 7.37044e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0297426, Final residual = 8.94118e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0197345, Final residual = 8.50389e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0136712, Final residual = 7.58338e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00972862, Final residual = 7.00827e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00723823, Final residual = 6.67563e-08, No Iterations 12
+mag(U): max: 2.43183 avg: 0.201049
+time step continuity errors : sum local = 1.05772e-11, global = -8.35513e-13, cumulative = -2.32013e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.22597e-06, Final residual = 1.22638e-10, No Iterations 1
+Liquid phase volume fraction = 0.50042  Min(alpha1) = -0.00657477  Max(alpha1) = 1.00311
+BiCGStab:  Solving for Ux, Initial residual = 0.000468341, Final residual = 3.79451e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00456101, Final residual = 2.37783e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.042916, Final residual = 6.22177e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0192381, Final residual = 9.3792e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00658744, Final residual = 7.17549e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00385377, Final residual = 9.95553e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00235598, Final residual = 7.89043e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00153994, Final residual = 6.51678e-08, No Iterations 11
+mag(U): max: 2.41345 avg: 0.20061
+time step continuity errors : sum local = 1.02792e-11, global = 3.79623e-13, cumulative = -2.28217e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000249235, Final residual = 6.27467e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.69038e-07, Final residual = 2.26428e-11, No Iterations 1
+Liquid phase volume fraction = 0.50042  Min(alpha1) = -0.00657024  Max(alpha1) = 1.00311
+ExecutionTime = 9.93 s  ClockTime = 11 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00422979 max: 0.400305 velocity magnitude: 1.15987
+deltaT = 0.000619355
+Time = 0.0251355
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000437665, Final residual = 2.42361e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00265253, Final residual = 4.75773e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.047604, Final residual = 6.81827e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0303162, Final residual = 8.35602e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.020151, Final residual = 8.94302e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.013854, Final residual = 7.37692e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0097549, Final residual = 6.33803e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00726158, Final residual = 5.81791e-08, No Iterations 11
+mag(U): max: 2.43727 avg: 0.201069
+time step continuity errors : sum local = 8.72997e-12, global = -1.68323e-12, cumulative = -2.45049e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.9953e-06, Final residual = 1.01222e-10, No Iterations 1
+Liquid phase volume fraction = 0.50042  Min(alpha1) = -0.00674344  Max(alpha1) = 1.00322
+BiCGStab:  Solving for Ux, Initial residual = 0.000453465, Final residual = 3.43719e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00459209, Final residual = 2.06463e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0434076, Final residual = 6.16353e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0198352, Final residual = 9.58796e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00681803, Final residual = 9.61917e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00389595, Final residual = 8.84696e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00244236, Final residual = 7.93145e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00169897, Final residual = 7.38728e-08, No Iterations 10
+mag(U): max: 2.41932 avg: 0.200634
+time step continuity errors : sum local = 1.09473e-11, global = -3.46474e-13, cumulative = -2.48514e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000260677, Final residual = 6.54236e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.69549e-07, Final residual = 1.88596e-11, No Iterations 1
+Liquid phase volume fraction = 0.50042  Min(alpha1) = -0.00673599  Max(alpha1) = 1.00322
+ExecutionTime = 10.19 s  ClockTime = 12 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00405951 max: 0.385174 velocity magnitude: 1.16153
+deltaT = 0.000619355
+Time = 0.0257548
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000441453, Final residual = 2.52693e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00273289, Final residual = 1.55747e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0475777, Final residual = 9.22961e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0304456, Final residual = 9.24929e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0201757, Final residual = 7.7393e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0138897, Final residual = 7.92295e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00987618, Final residual = 6.76746e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00733208, Final residual = 6.42776e-08, No Iterations 11
+mag(U): max: 2.44251 avg: 0.201086
+time step continuity errors : sum local = 9.55543e-12, global = -1.27745e-12, cumulative = -2.61289e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.97587e-06, Final residual = 9.7964e-11, No Iterations 1
+Liquid phase volume fraction = 0.500419  Min(alpha1) = -0.00690507  Max(alpha1) = 1.00334
+BiCGStab:  Solving for Ux, Initial residual = 0.000445119, Final residual = 3.35784e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00464379, Final residual = 1.99281e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.043528, Final residual = 6.88115e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0202883, Final residual = 8.52901e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0067498, Final residual = 9.14063e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0039444, Final residual = 9.36526e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00248412, Final residual = 8.32539e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00172169, Final residual = 9.43224e-08, No Iterations 10
+mag(U): max: 2.42463 avg: 0.200653
+time step continuity errors : sum local = 1.38015e-11, global = 3.73871e-13, cumulative = -2.5755e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000257033, Final residual = 7.62007e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.99092e-07, Final residual = 2.00604e-11, No Iterations 1
+Liquid phase volume fraction = 0.500419  Min(alpha1) = -0.00689484  Max(alpha1) = 1.00334
+ExecutionTime = 10.45 s  ClockTime = 12 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00405889 max: 0.385992 velocity magnitude: 1.16308
+deltaT = 0.000619355
+Time = 0.0263742
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000434825, Final residual = 2.75398e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00273772, Final residual = 1.41651e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0490963, Final residual = 9.87763e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0313586, Final residual = 7.82797e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0206976, Final residual = 8.89064e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0142105, Final residual = 7.49883e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0100941, Final residual = 7.28328e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00747144, Final residual = 7.51958e-08, No Iterations 11
+mag(U): max: 2.44716 avg: 0.201102
+time step continuity errors : sum local = 1.10047e-11, global = -1.42093e-12, cumulative = -2.71759e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.92903e-06, Final residual = 9.70243e-11, No Iterations 1
+Liquid phase volume fraction = 0.500419  Min(alpha1) = -0.00705914  Max(alpha1) = 1.00345
+BiCGStab:  Solving for Ux, Initial residual = 0.000437396, Final residual = 3.28734e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00471318, Final residual = 1.75483e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0437671, Final residual = 7.43185e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.020567, Final residual = 9.00368e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00677145, Final residual = 7.89829e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00392063, Final residual = 7.56073e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00241101, Final residual = 8.5948e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.0016763, Final residual = 9.39152e-08, No Iterations 10
+mag(U): max: 2.42917 avg: 0.200671
+time step continuity errors : sum local = 1.34313e-11, global = -2.50318e-13, cumulative = -2.74262e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000251193, Final residual = 6.701e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.60582e-07, Final residual = 1.92091e-11, No Iterations 1
+Liquid phase volume fraction = 0.500419  Min(alpha1) = -0.00704678  Max(alpha1) = 1.00345
+ExecutionTime = 10.72 s  ClockTime = 13 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00405806 max: 0.386698 velocity magnitude: 1.16445
+deltaT = 0.000619355
+Time = 0.0269935
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000421592, Final residual = 3.09984e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00278424, Final residual = 5.90464e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0514346, Final residual = 9.22249e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0326493, Final residual = 6.04719e-08, No Iterations 14
+CG:  Solving for pd, Initial residual = 0.021558, Final residual = 5.90362e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0147486, Final residual = 7.52989e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0104596, Final residual = 7.19893e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00775957, Final residual = 9.74802e-08, No Iterations 10
+mag(U): max: 2.45097 avg: 0.201117
+time step continuity errors : sum local = 1.38793e-11, global = -1.66115e-12, cumulative = -2.90874e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.91412e-06, Final residual = 9.25061e-11, No Iterations 1
+Liquid phase volume fraction = 0.500418  Min(alpha1) = -0.00720651  Max(alpha1) = 1.00356
+BiCGStab:  Solving for Ux, Initial residual = 0.000431587, Final residual = 3.17966e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.0049258, Final residual = 1.55106e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0453824, Final residual = 6.68527e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0207874, Final residual = 8.816e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00680908, Final residual = 9.74968e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00382692, Final residual = 8.24142e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00235886, Final residual = 7.92738e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00163184, Final residual = 6.99833e-08, No Iterations 11
+mag(U): max: 2.43224 avg: 0.200687
+time step continuity errors : sum local = 9.58635e-12, global = 1.8151e-13, cumulative = -2.89059e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000251799, Final residual = 6.16949e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.24391e-07, Final residual = 1.75502e-11, No Iterations 1
+Liquid phase volume fraction = 0.500418  Min(alpha1) = -0.00719299  Max(alpha1) = 1.00356
+ExecutionTime = 10.98 s  ClockTime = 13 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.004057 max: 0.387145 velocity magnitude: 1.16543
+deltaT = 0.000619355
+Time = 0.0276129
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000413733, Final residual = 3.52334e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.0029227, Final residual = 7.14222e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0526385, Final residual = 8.54259e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0334827, Final residual = 8.031e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0221091, Final residual = 6.12861e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0152279, Final residual = 8.50698e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0107708, Final residual = 7.93891e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00788461, Final residual = 8.03123e-08, No Iterations 11
+mag(U): max: 2.45341 avg: 0.201128
+time step continuity errors : sum local = 1.11651e-11, global = -1.68344e-12, cumulative = -3.05893e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.94854e-06, Final residual = 8.71302e-11, No Iterations 1
+Liquid phase volume fraction = 0.500418  Min(alpha1) = -0.00734808  Max(alpha1) = 1.00367
+BiCGStab:  Solving for Ux, Initial residual = 0.000426019, Final residual = 3.08483e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00521105, Final residual = 1.24412e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.047254, Final residual = 7.43778e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0211086, Final residual = 7.18861e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.006952, Final residual = 8.83469e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00382155, Final residual = 8.20583e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00235275, Final residual = 9.59886e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00159951, Final residual = 8.7646e-08, No Iterations 10
+mag(U): max: 2.43468 avg: 0.2007
+time step continuity errors : sum local = 1.16304e-11, global = -4.17818e-13, cumulative = -3.10071e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00024958, Final residual = 5.6187e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.08348e-07, Final residual = 1.61851e-11, No Iterations 1
+Liquid phase volume fraction = 0.500418  Min(alpha1) = -0.00733398  Max(alpha1) = 1.00367
+ExecutionTime = 11.25 s  ClockTime = 13 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.0040554 max: 0.387511 velocity magnitude: 1.1662
+deltaT = 0.000619355
+Time = 0.0282323
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000411187, Final residual = 3.45856e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00309019, Final residual = 8.83087e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0525069, Final residual = 7.30613e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.033289, Final residual = 9.05536e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0217997, Final residual = 6.47794e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0150325, Final residual = 9.30722e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.010788, Final residual = 8.19152e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00805728, Final residual = 7.91846e-08, No Iterations 11
+mag(U): max: 2.45534 avg: 0.201139
+time step continuity errors : sum local = 1.08924e-11, global = -1.65399e-12, cumulative = -3.26611e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.96459e-06, Final residual = 9.04222e-11, No Iterations 1
+Liquid phase volume fraction = 0.500418  Min(alpha1) = -0.00748437  Max(alpha1) = 1.00378
+BiCGStab:  Solving for Ux, Initial residual = 0.000419844, Final residual = 3.13763e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00546966, Final residual = 1.08182e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0482198, Final residual = 8.61337e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0216726, Final residual = 8.30294e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00698677, Final residual = 9.47764e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00402991, Final residual = 8.45646e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00251127, Final residual = 9.03645e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00175278, Final residual = 9.27083e-08, No Iterations 11
+mag(U): max: 2.43645 avg: 0.200711
+time step continuity errors : sum local = 1.21867e-11, global = -1.17341e-13, cumulative = -3.27785e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000244589, Final residual = 5.91681e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.24906e-07, Final residual = 1.51723e-11, No Iterations 1
+Liquid phase volume fraction = 0.500418  Min(alpha1) = -0.00746913  Max(alpha1) = 1.00378
+ExecutionTime = 11.51 s  ClockTime = 14 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00405327 max: 0.387779 velocity magnitude: 1.16676
+deltaT = 0.000619355
+Time = 0.0288516
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000412145, Final residual = 2.95421e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00330685, Final residual = 6.2814e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0525507, Final residual = 8.1081e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0330458, Final residual = 9.14351e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.021552, Final residual = 5.75847e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0148733, Final residual = 9.65417e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0105658, Final residual = 9.32979e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00786092, Final residual = 7.29517e-08, No Iterations 11
+mag(U): max: 2.45667 avg: 0.201149
+time step continuity errors : sum local = 1.00084e-11, global = -1.75975e-12, cumulative = -3.45382e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.98699e-06, Final residual = 9.52431e-11, No Iterations 1
+Liquid phase volume fraction = 0.500417  Min(alpha1) = -0.00761462  Max(alpha1) = 1.00389
+BiCGStab:  Solving for Ux, Initial residual = 0.000413275, Final residual = 3.232e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.0055921, Final residual = 1.39413e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0487306, Final residual = 9.45574e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.021311, Final residual = 9.01583e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00718587, Final residual = 7.81509e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.004086, Final residual = 9.03347e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00257316, Final residual = 6.87643e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00173234, Final residual = 8.96476e-08, No Iterations 11
+mag(U): max: 2.43774 avg: 0.200721
+time step continuity errors : sum local = 1.17798e-11, global = -2.18478e-13, cumulative = -3.47567e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000235611, Final residual = 6.08209e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 3.97311e-07, Final residual = 1.44652e-11, No Iterations 1
+Liquid phase volume fraction = 0.500417  Min(alpha1) = -0.00759712  Max(alpha1) = 1.00389
+ExecutionTime = 11.77 s  ClockTime = 14 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00405109 max: 0.38798 velocity magnitude: 1.16716
+deltaT = 0.000619355
+Time = 0.029471
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000414638, Final residual = 2.67823e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00349513, Final residual = 3.29812e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.052669, Final residual = 7.32643e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0332159, Final residual = 7.14989e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0216589, Final residual = 6.25816e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0147278, Final residual = 8.7168e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0104724, Final residual = 7.15863e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00779744, Final residual = 6.91091e-08, No Iterations 11
+mag(U): max: 2.45754 avg: 0.201158
+time step continuity errors : sum local = 9.47522e-12, global = 3.13302e-13, cumulative = -3.44434e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.00783e-06, Final residual = 9.66033e-11, No Iterations 1
+Liquid phase volume fraction = 0.500417  Min(alpha1) = -0.00773733  Max(alpha1) = 1.004
+BiCGStab:  Solving for Ux, Initial residual = 0.000406446, Final residual = 3.3013e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00553855, Final residual = 1.76194e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0491059, Final residual = 8.75335e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0210519, Final residual = 9.02764e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00698996, Final residual = 7.93068e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00395641, Final residual = 8.31173e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00246398, Final residual = 9.19342e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00169325, Final residual = 7.89268e-08, No Iterations 11
+mag(U): max: 2.43842 avg: 0.200731
+time step continuity errors : sum local = 1.04759e-11, global = -1.62063e-14, cumulative = -3.44596e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000230953, Final residual = 5.6264e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.18647e-07, Final residual = 1.53942e-11, No Iterations 1
+Liquid phase volume fraction = 0.500417  Min(alpha1) = -0.00771623  Max(alpha1) = 1.004
+ExecutionTime = 12.03 s  ClockTime = 14 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00404916 max: 0.388087 velocity magnitude: 1.16736
+deltaT = 0.000619355
+Time = 0.0300903
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000417802, Final residual = 2.58872e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00363197, Final residual = 9.12879e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0527331, Final residual = 8.78186e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.033399, Final residual = 6.93353e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0217616, Final residual = 7.0624e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0148102, Final residual = 8.91531e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0105033, Final residual = 8.32543e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0078081, Final residual = 6.95887e-08, No Iterations 11
+mag(U): max: 2.45795 avg: 0.201168
+time step continuity errors : sum local = 9.56192e-12, global = 3.91378e-13, cumulative = -3.40682e-11
+BiCGStab:  Solving for alpha1, Initial residual = 6.01529e-06, Final residual = 9.35867e-11, No Iterations 1
+Liquid phase volume fraction = 0.500416  Min(alpha1) = -0.00784719  Max(alpha1) = 1.00411
+BiCGStab:  Solving for Ux, Initial residual = 0.00039939, Final residual = 3.29511e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00543736, Final residual = 1.91187e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0490371, Final residual = 8.57504e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0212468, Final residual = 9.69032e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00716238, Final residual = 9.31646e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00403849, Final residual = 7.41349e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00253756, Final residual = 9.25409e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00173455, Final residual = 7.73894e-08, No Iterations 11
+mag(U): max: 2.43894 avg: 0.200741
+time step continuity errors : sum local = 1.03426e-11, global = 2.12244e-13, cumulative = -3.3856e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000231935, Final residual = 5.46048e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.33253e-07, Final residual = 1.66955e-11, No Iterations 1
+Liquid phase volume fraction = 0.500416  Min(alpha1) = -0.00782563  Max(alpha1) = 1.00411
+ExecutionTime = 12.29 s  ClockTime = 15 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00404752 max: 0.388183 velocity magnitude: 1.16749
+deltaT = 0.000619355
+Time = 0.0307097
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000418415, Final residual = 2.64092e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00372115, Final residual = 2.03607e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.054003, Final residual = 8.35776e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0340503, Final residual = 7.87266e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0222498, Final residual = 6.28695e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0150741, Final residual = 9.54384e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0107009, Final residual = 8.92316e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00791406, Final residual = 8.50964e-08, No Iterations 11
+mag(U): max: 2.45815 avg: 0.201176
+time step continuity errors : sum local = 1.16445e-11, global = 1.15091e-12, cumulative = -3.27051e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.99298e-06, Final residual = 8.97425e-11, No Iterations 1
+Liquid phase volume fraction = 0.500416  Min(alpha1) = -0.00794744  Max(alpha1) = 1.00422
+BiCGStab:  Solving for Ux, Initial residual = 0.000393044, Final residual = 3.25836e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00530297, Final residual = 1.78973e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0487642, Final residual = 8.34483e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0216453, Final residual = 6.36436e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.00733896, Final residual = 8.74051e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0041547, Final residual = 8.47693e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00264157, Final residual = 8.72789e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00182004, Final residual = 9.09006e-08, No Iterations 10
+mag(U): max: 2.43927 avg: 0.20075
+time step continuity errors : sum local = 1.20883e-11, global = -9.10085e-14, cumulative = -3.27961e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000231198, Final residual = 5.81154e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.59504e-07, Final residual = 1.61747e-11, No Iterations 1
+Liquid phase volume fraction = 0.500416  Min(alpha1) = -0.00792536  Max(alpha1) = 1.00422
+ExecutionTime = 12.55 s  ClockTime = 15 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00404666 max: 0.388256 velocity magnitude: 1.16755
+deltaT = 0.000619355
+Time = 0.031329
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000413921, Final residual = 2.80489e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00373976, Final residual = 1.63864e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0550008, Final residual = 8.89843e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0343782, Final residual = 7.73091e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0224711, Final residual = 6.75471e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0151435, Final residual = 9.28473e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0107235, Final residual = 9.3814e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00787911, Final residual = 5.78599e-08, No Iterations 12
+mag(U): max: 2.45824 avg: 0.201163
+time step continuity errors : sum local = 7.79652e-12, global = 1.21039e-12, cumulative = -3.15857e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.94345e-06, Final residual = 8.8802e-11, No Iterations 1
+Liquid phase volume fraction = 0.500416  Min(alpha1) = -0.00803874  Max(alpha1) = 1.00433
+BiCGStab:  Solving for Ux, Initial residual = 0.000387029, Final residual = 3.15722e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00516289, Final residual = 1.53433e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0490393, Final residual = 8.63794e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0222618, Final residual = 4.74361e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0079147, Final residual = 8.6764e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.004417, Final residual = 8.44318e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00273913, Final residual = 8.5388e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00168679, Final residual = 9.34702e-08, No Iterations 9
+mag(U): max: 2.43939 avg: 0.200731
+time step continuity errors : sum local = 1.20748e-11, global = -4.20967e-13, cumulative = -3.20066e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000232032, Final residual = 6.13834e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.39323e-07, Final residual = 1.52407e-11, No Iterations 1
+Liquid phase volume fraction = 0.500416  Min(alpha1) = -0.00801658  Max(alpha1) = 1.00433
+ExecutionTime = 12.82 s  ClockTime = 16 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00404646 max: 0.388299 velocity magnitude: 1.16754
+deltaT = 0.000619355
+Time = 0.0319484
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000403136, Final residual = 3.11756e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00374579, Final residual = 2.41711e-10, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.059016, Final residual = 9.21866e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0366197, Final residual = 7.31618e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0240421, Final residual = 6.18715e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.016083, Final residual = 9.32299e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0114765, Final residual = 8.03222e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00852835, Final residual = 7.5606e-08, No Iterations 11
+mag(U): max: 2.45801 avg: 0.201173
+time step continuity errors : sum local = 1.01081e-11, global = 5.80488e-13, cumulative = -3.14262e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.88917e-06, Final residual = 8.79014e-11, No Iterations 1
+Liquid phase volume fraction = 0.500415  Min(alpha1) = -0.00812191  Max(alpha1) = 1.00443
+BiCGStab:  Solving for Ux, Initial residual = 0.000382592, Final residual = 3.00484e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.0049071, Final residual = 1.17438e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0499942, Final residual = 8.53713e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0218776, Final residual = 4.94703e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.00755865, Final residual = 8.7729e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00421265, Final residual = 9.97083e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00268846, Final residual = 7.17793e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.00183957, Final residual = 7.36315e-08, No Iterations 11
+mag(U): max: 2.43893 avg: 0.200739
+time step continuity errors : sum local = 9.36844e-12, global = -4.16399e-13, cumulative = -3.18426e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000235344, Final residual = 5.79329e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 4.06239e-07, Final residual = 1.49764e-11, No Iterations 1
+Liquid phase volume fraction = 0.500415  Min(alpha1) = -0.00809957  Max(alpha1) = 1.00443
+ExecutionTime = 13.09 s  ClockTime = 16 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00404539 max: 0.388241 velocity magnitude: 1.16732
+deltaT = 0.000619355
+Time = 0.0325677
+
+BiCGStab:  Solving for Ux, Initial residual = 0.00039107, Final residual = 3.53831e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00395675, Final residual = 5.73739e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0593015, Final residual = 8.96204e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0371951, Final residual = 7.8757e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0243473, Final residual = 6.03256e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0162824, Final residual = 7.33534e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0115349, Final residual = 9.60065e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00848888, Final residual = 8.41892e-08, No Iterations 11
+mag(U): max: 2.45733 avg: 0.201185
+time step continuity errors : sum local = 1.10338e-11, global = 6.65733e-13, cumulative = -3.11768e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.91656e-06, Final residual = 8.31329e-11, No Iterations 1
+Liquid phase volume fraction = 0.500415  Min(alpha1) = -0.00819812  Max(alpha1) = 1.00454
+BiCGStab:  Solving for Ux, Initial residual = 0.000378974, Final residual = 2.87117e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00457412, Final residual = 8.3501e-12, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0518989, Final residual = 8.4093e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0221352, Final residual = 6.80997e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.00754727, Final residual = 9.16801e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00417616, Final residual = 9.18395e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00267845, Final residual = 8.68066e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00184633, Final residual = 9.09878e-08, No Iterations 10
+mag(U): max: 2.43808 avg: 0.200751
+time step continuity errors : sum local = 1.11847e-11, global = -2.42198e-13, cumulative = -3.1419e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000236912, Final residual = 5.20837e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 3.83812e-07, Final residual = 1.43344e-11, No Iterations 1
+Liquid phase volume fraction = 0.500415  Min(alpha1) = -0.00817529  Max(alpha1) = 1.00454
+ExecutionTime = 13.35 s  ClockTime = 16 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00404441 max: 0.388119 velocity magnitude: 1.16696
+deltaT = 0.000619355
+Time = 0.0331871
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000389609, Final residual = 3.80741e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00421642, Final residual = 8.73882e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0593433, Final residual = 8.22043e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0371304, Final residual = 6.99189e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0242444, Final residual = 7.0346e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0166363, Final residual = 9.72896e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0116861, Final residual = 8.31848e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00852553, Final residual = 8.14413e-08, No Iterations 11
+mag(U): max: 2.45628 avg: 0.201197
+time step continuity errors : sum local = 1.05273e-11, global = 6.53121e-13, cumulative = -3.07659e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.93179e-06, Final residual = 7.88992e-11, No Iterations 1
+Liquid phase volume fraction = 0.500415  Min(alpha1) = -0.00826709  Max(alpha1) = 1.00464
+BiCGStab:  Solving for Ux, Initial residual = 0.000374687, Final residual = 2.85281e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00420594, Final residual = 5.61593e-12, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0531274, Final residual = 8.75126e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0224453, Final residual = 7.69167e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00762969, Final residual = 9.32449e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.004076, Final residual = 6.32318e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00257299, Final residual = 8.8297e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.0017689, Final residual = 9.06352e-08, No Iterations 11
+mag(U): max: 2.43694 avg: 0.200764
+time step continuity errors : sum local = 1.08837e-11, global = -2.31807e-13, cumulative = -3.09977e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000235329, Final residual = 4.92552e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 3.65663e-07, Final residual = 1.40348e-11, No Iterations 1
+Liquid phase volume fraction = 0.500415  Min(alpha1) = -0.00824412  Max(alpha1) = 1.00464
+ExecutionTime = 13.64 s  ClockTime = 111 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00404285 max: 0.38795 velocity magnitude: 1.16648
+deltaT = 0.000619355
+Time = 0.0338065
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000388526, Final residual = 3.56167e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.0044569, Final residual = 8.11733e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0587075, Final residual = 9.82057e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0364077, Final residual = 8.72628e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0237934, Final residual = 8.50631e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0162731, Final residual = 7.78478e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0116149, Final residual = 9.19886e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.008653, Final residual = 8.30777e-08, No Iterations 11
+mag(U): max: 2.45499 avg: 0.201211
+time step continuity errors : sum local = 1.06756e-11, global = 5.49391e-13, cumulative = -3.04483e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.93135e-06, Final residual = 8.04509e-11, No Iterations 1
+Liquid phase volume fraction = 0.500414  Min(alpha1) = -0.00832881  Max(alpha1) = 1.00474
+BiCGStab:  Solving for Ux, Initial residual = 0.000369953, Final residual = 2.88652e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00389281, Final residual = 4.9521e-12, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0534999, Final residual = 8.79389e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0230082, Final residual = 5.00612e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.00750512, Final residual = 8.3942e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00407788, Final residual = 9.27011e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00256115, Final residual = 7.21686e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00174229, Final residual = 8.64809e-08, No Iterations 11
+mag(U): max: 2.43561 avg: 0.200778
+time step continuity errors : sum local = 1.03457e-11, global = 1.35569e-13, cumulative = -3.03127e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000226951, Final residual = 4.69597e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 3.79892e-07, Final residual = 1.50686e-11, No Iterations 1
+Liquid phase volume fraction = 0.500414  Min(alpha1) = -0.0083047  Max(alpha1) = 1.00474
+ExecutionTime = 13.91 s  ClockTime = 111 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00404092 max: 0.387755 velocity magnitude: 1.16593
+deltaT = 0.000619355
+Time = 0.0344258
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000390305, Final residual = 3.06382e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00452664, Final residual = 5.17194e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0594998, Final residual = 6.87326e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0366149, Final residual = 8.96656e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0238085, Final residual = 8.19343e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0161493, Final residual = 8.50013e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.011514, Final residual = 9.15574e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00852933, Final residual = 8.13328e-08, No Iterations 11
+mag(U): max: 2.45348 avg: 0.201227
+time step continuity errors : sum local = 1.04606e-11, global = 9.90402e-14, cumulative = -3.02137e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.94609e-06, Final residual = 8.25869e-11, No Iterations 1
+Liquid phase volume fraction = 0.500414  Min(alpha1) = -0.00838076  Max(alpha1) = 1.00484
+BiCGStab:  Solving for Ux, Initial residual = 0.00036488, Final residual = 2.92179e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00362302, Final residual = 5.62694e-12, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0537963, Final residual = 8.57109e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0225311, Final residual = 8.75338e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00748418, Final residual = 7.34448e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00414501, Final residual = 7.5564e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00265213, Final residual = 6.80665e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00179588, Final residual = 9.51178e-08, No Iterations 10
+mag(U): max: 2.43408 avg: 0.200794
+time step continuity errors : sum local = 1.14197e-11, global = 3.82157e-13, cumulative = -2.98315e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.000216898, Final residual = 4.39835e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 3.55326e-07, Final residual = 1.55564e-11, No Iterations 1
+Liquid phase volume fraction = 0.500414  Min(alpha1) = -0.00835531  Max(alpha1) = 1.00484
+ExecutionTime = 14.17 s  ClockTime = 111 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00403907 max: 0.38753 velocity magnitude: 1.16529
+deltaT = 0.000619355
+Time = 0.0350452
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000393683, Final residual = 2.84554e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00451072, Final residual = 1.75752e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0596959, Final residual = 8.37981e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0366264, Final residual = 8.40568e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0236334, Final residual = 7.19802e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0160718, Final residual = 6.44359e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0114468, Final residual = 8.18817e-08, No Iterations 11
+CG:  Solving for pd, Initial residual = 0.00847032, Final residual = 8.39762e-08, No Iterations 11
+mag(U): max: 2.45178 avg: 0.201245
+time step continuity errors : sum local = 1.08274e-11, global = -4.77754e-13, cumulative = -3.03093e-11
+BiCGStab:  Solving for alpha1, Initial residual = 5.96509e-06, Final residual = 8.27172e-11, No Iterations 1
+Liquid phase volume fraction = 0.500414  Min(alpha1) = -0.0084212  Max(alpha1) = 1.00494
+BiCGStab:  Solving for Ux, Initial residual = 0.00035993, Final residual = 2.89518e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00340573, Final residual = 6.61368e-12, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0540624, Final residual = 8.39849e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0220144, Final residual = 8.22456e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00728245, Final residual = 9.76279e-08, No Iterations 10
+CG:  Solving for pd, Initial residual = 0.00403774, Final residual = 7.28853e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00257082, Final residual = 6.67316e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.00175229, Final residual = 9.38369e-08, No Iterations 10
+mag(U): max: 2.43231 avg: 0.200813
+time step continuity errors : sum local = 1.14016e-11, global = 3.78398e-13, cumulative = -2.99309e-11
+Calculating static pressure
+CG:  Solving for p, Initial residual = 0.00021659, Final residual = 4.3326e-08, No Iterations 7
+Relaxation: p = 0.1
+BiCGStab:  Solving for alpha1, Initial residual = 3.75425e-07, Final residual = 1.54483e-11, No Iterations 1
+Liquid phase volume fraction = 0.500414  Min(alpha1) = -0.00839418  Max(alpha1) = 1.00494
+ExecutionTime = 14.43 s  ClockTime = 112 s
+
+Volume: new = 0.0221905 old = 0.0221905 change = 0 ratio = 0
+Courant Number mean: 0.00403752 max: 0.387263 velocity magnitude: 1.16456
+deltaT = 0.000619355
+Time = 0.0356645
+
+BiCGStab:  Solving for Ux, Initial residual = 0.000397175, Final residual = 2.764e-09, No Iterations 1
+BiCGStab:  Solving for Uy, Initial residual = 0.00440275, Final residual = 8.61165e-11, No Iterations 2
+CG:  Solving for pd, Initial residual = 0.0594632, Final residual = 7.5398e-08, No Iterations 13
+CG:  Solving for pd, Initial residual = 0.0366966, Final residual = 8.25306e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0237798, Final residual = 7.6062e-08, No Iterations 12
+CG:  Solving for pd, Initial residual = 0.0162009, Final residual = 9.71794e-08, No Iterations 11

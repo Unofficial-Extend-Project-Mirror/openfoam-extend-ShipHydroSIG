@@ -1,0 +1,92 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.4.1                                 |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+    class           dictionary;
+    object          controlDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// startFrom       latestTime;
+startFrom       startTime;
+
+startTime       0.0;
+
+stopAt          endTime;
+
+endTime         0.08;
+
+deltaT          1e-4;
+
+writeControl    timeStep;
+writeInterval   20;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression compressed;
+
+timeFormat      general;
+
+timePrecision   6;
+
+graphFormat     raw;
+
+runTimeModifiable yes;
+
+adjustTimeStep  yes;
+maxCo           0.25;
+maxDeltaT       0.1;
+
+functions
+(
+    forces
+    {
+        type        rasVofForceAndTorque;
+
+        patches     ( hull );
+
+        file        hull.dat;
+
+        origin      (0 0 0);
+    }
+
+    probes1
+    {
+        // Type of functionObject
+        type probes;
+
+        // Where to load it from (if not already in solver)
+        functionObjectLibs ("libsampling.so");
+
+        // Locations to be probed. runTime modifiable!
+        probeLocations
+        (
+            (0.26 0.33 0.0)
+        );
+
+        // Fields to be probed. runTime modifiable!
+        fields
+        (
+            p
+            alpha1
+        );
+
+        outputControl outputTime;
+    }
+
+);
+
+// ************************************************************************* //

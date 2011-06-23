@@ -1,0 +1,75 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.4                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+    class           dictionary;
+    object          motionProperties;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// dynamicFvMesh   staticFvMesh;
+
+dynamicFvMesh   sixDofTopoMotion;
+
+sixDofTopoMotionCoeffs
+{
+    bodies
+    (
+        barge
+        {
+            hullPatches     (barge);
+
+            addPropulsionForce      no;
+            propulsionDirection     (1 0 0);
+            propulsionForceCentroid (0 0 0);
+
+            // Centre of slider is given relative to centre of gravity
+            // of the body
+            centreOfSlider      (0 0 0);
+            hullSlider          bargeSlider;
+            fixedSlider         boxSlider;
+            hullSliderZone      none;
+            fixedSliderZone     none;
+
+            odeSolver       RK;
+            epsilon         0.001;
+
+
+            fixedSurge      no;
+            fixedSway       no;
+            fixedHeave      no;
+
+            fixedRoll       no;
+            fixedPitch      no;
+            fixedYaw        no;
+
+            steadyState     no;
+        }
+    );
+
+    useTopoSliding     yes;
+}
+
+solver          laplaceFaceDecomposition;
+diffusivity     uniform;
+
+twoDMotion      yes;
+frozenDiffusion off;
+
+distancePatches
+(
+    barge
+    bargeSlider
+    boxSlider
+);
+
+// ************************************************************************* //

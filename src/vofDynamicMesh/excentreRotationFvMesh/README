@@ -1,0 +1,6 @@
+This directory contains the dynamicBodyFvMesh.H and dynamicBodyFvMesh.C files
+
+It is the simplified version of your dynamicBodyFvMesh class. 
+
+The selection of rotAxis is primitive. It can be done through vectors but I 
+haven't tried it yet.
